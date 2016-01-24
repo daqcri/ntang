@@ -1,1 +1,0 @@
-DA QCRI People
