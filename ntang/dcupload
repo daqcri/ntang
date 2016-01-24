@@ -1,0 +1,1 @@
+scp -r dcprojects/* ntang@cluster.qcri.org:/home/ntang/public_html/dcprojects/

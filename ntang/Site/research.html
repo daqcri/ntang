@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+	Verti by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nan's Research</title>
+		<link href="css/hover.css" rel="stylesheet" media="all">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-18293748-5', 'auto');
+		  ga('send', 'pageview');
+		</script>		
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+
+	<body class="no-sidebar">
+		<!-- Header -->
+		<div id="header-wrapper">
+			<header id="header" class="container">
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="index.html">Nan Tang</a></h1>						
+				</div>
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li class="current">
+							<a href="research.html">Research</a>
+							<ul>
+								<li><a href="http://projects.qcri.org/~ntang/dcprojects/index.html">Data Quality Management</a></li>
+								<li><a href="research.html">Network Monitoring</a></li>
+								<li><a href="research.html">Distributed data processing</a></li>
+								<li><a href="research.html">System Work</a></li>
+							</ul>
+						</li>						
+						<li><a href="publications.html">Publications</a></li>
+						<li><a href="services.html">Services</a></li>
+					</ul>
+				</nav>				
+			</header>
+		</div>
+		
+		<!-- Features -->
+		<div id="features-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="6u">						
+						<!-- Box -->
+						<section class="box feature">
+							<a href="http://projects.qcri.org/~ntang/dcprojects/resources.html" class="button big icon fa-server:before"  class="hvr-glow"> Data Quality Management </a>	
+							<div class="inner">																							
+								<p> My research efforts in the past several years mainly focused on data cleaning. The following figure gives an overview of the data cleaning projects that I have worked on. Please click the image for more details. Also, you can find more resources (datasets, softwares) on <a href="http://projects.qcri.org/~ntang/dcprojects/resources.html">this page</a>.</p>
+								<a href="http://projects.qcri.org/~ntang/dcprojects/index.html" class="hvr-glow"><img src="images/dc.jpg" width="500" alt="" /></a>														
+							</div>
+						</section>
+
+					</div>
+					<div class="6u">						
+						<!-- Box -->
+						<section class="box feature">
+							<li class="button big icon fa-chevron-left:before" style="background:green">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Network Monitoring &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+							<div class="inner">
+								<header>
+									<h2>On Summarizing Graph Streams</h2>
+
+									<p>Massive graphs arise in many applications e.g., network traffic data and social networks. They are highly dynamic. In addition, real-time analytics over big graph streams is urgently needed. To enable such analytics, we study the problem of summarizing graph streams. Specifically, given a graph stream G, directed or undirected, the objective is to summarize G as S with a much smaller (sublinear) space, linear construction time and constant maintenance cost for each edge update, such that S allows many queries over G to be approximately conducted efficiently. </p>
+								</header>
+								<header>
+									<h2>Prediction using Graph Sketches</h2>
+									<p>Beyond monitoring networks using our graph sketches, we also study the problem of predicing the future using our graph sketches.</p>
+								</header>
+								<br /><br />
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<body class="no-sidebar">		
+		<!-- Features -->
+		<div id="features-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="6u">						
+						<!-- Box -->
+						<section class="box feature">
+							<li class="button big icon fa-server:before" style="background:grey"> Distributed Data Processing </li>	
+							<div class="inner">															<h2> Rheem: agile distributed data processing .</h2>
+								<p>Big data analytics over diverse data processing platforms. We target at achieving platform independence and performance benefits for various domains, such as data cleaning and machine learning.</p>
+							</div>							
+						</section>								
+					</div>
+					<div class="6u">						
+						<!-- Box -->
+						<section class="box feature">
+							<li class="button big icon fa-chevron-left:before" style="background:red">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp System Work &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+							<div class="inner">
+								<header>
+									<h2>Indexing large collections of data with small indices</h2>
+								</header>
+								<p>Designed effective partial posting list selection algorithm, and implemented bitwise data compression, which saves 87.5% storage overhead on huge strings (up to 426GB), implemented using C.</p>	
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

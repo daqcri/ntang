@@ -1,0 +1,5 @@
+ssh ntang@staff.ssh.inf.ed.ac.uk
+
+scp ntang@staff.ssh.inf.ed.ac.uk:/public/homepages/ntang/web/Site/
+
+scp -r Site/* ntang@cluster.qcri.org:/home/ntang/public_html/Site/
