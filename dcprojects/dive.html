@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>DIVE</title>
+		<title>FALCON</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -40,7 +40,7 @@
 					
 				<!-- Logo -->
 					<div id="logo">
-						<h1><a href="#">DIVE</a></h1>
+						<h1><a href="#">FALCON</a></h1>
 						<span style="color:black">An interactive data cleaning system</span>
 					</div>
 				
@@ -53,7 +53,7 @@
 							<li><a href="srules.html">Sherlock Rules</a></li>
 							<li><a href="erules.html">Editing Rules</a></li>
 							<li><a href="currency.html">Data Currency</a></li>
-							<li class="active"><a href="dive.html">DIVE</a></li>
+							<li class="active"><a href="dive.html">FALCON</a></li>
 							<li><a href="resources.html">Resources</a></li>
 						</ul>	
 					</nav>
@@ -61,25 +61,36 @@
 		</div>
 	<!-- Header -->
 			
-	<!-- Main -->
+		<!-- Main -->
 		<div id="main">
 			<div class="container">
 				<div class="row">
-
 					<!-- Content -->
-						<div id="content" class="12u skel-cell-important">
-							<section>
-								<header>
-									<h2>Under Construction</h2>
-								</header>
-							</section>
-						</div>
-					<!-- /Content -->
-						
-				</div>
-			
+					<div id="content" class="12u skel-cell-important">
+						<section>
+							<header>
+								<h2>Abstract</h2>
+							</header>
+							<p>Falcon is an interactive, deterministic, and declarative data cleaning system, which uses SQL update (SQLU) queries as the language to repair data. Falcon does not rely on the existence of a set of pre-defined data quality rules. On the contrary, it encourages users to explore the data, identify possible problems, and make updates to fix them. Bootstrapped by one user update, Falcon guesses a set of possible SQL update queries that can be used to repair the data. The main technical challenge addressed in this work consists in finding a set of SQL update queries that is minimal in size and at the same time fixes the largest number of errors in the data. We formalize this problem as a search in a lattice-shaped space. To guarantee that the chosen updates are semantically correct, FALCON navigates the lattice by interacting with users to gradually validate the set of SQL update queries. Besides using traditional one-hop based traverse algorithms (e.g., BFS or DFS), we describe novel multi-hop search algorithms such that Falcon can dive over the lattice and conduct the search efficiently. Our novel search strategy is coupled with a number of optimization techniques to further prune the search space and efficiently maintain the lattice. </p>
+						</section>
+						<section>
+							<p>More examples will be provided later. At this moment please find more details from the paper.</p>				
+						</section>
+						<section>
+							<header>
+								<h2>Publications</h2>
+							</header>
+							<p>
+								<br><b><i>Interactive and Deterministic Data Cleaning: A Tossed Stone Raises a Thousand Ripples </i></b>
+								<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), San Francisco, USA, 2016 </font>
+								<br><i>Jian He, Enzo Veltri, Donatello Santoro, Guoliang Li, Giansalvatore Mecca, Paolo Papotti, and Nan Tang</i>	
+							</p>
+						</section>
+					</div>
+					<!-- /Content -->						
+				</div>			
 			</div>
 		</div>
-	<!-- Main -->
+		<!-- Main -->
 	</body>
 </html>
