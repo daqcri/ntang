@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<!--
+	Verti by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>DBLP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="left-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+
+						<!-- Logo -->
+							<div id="logo">
+								<h1><a href="index.html">TCM</a></h1>
+							</div>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="graphstreams.html">Graph Streams</a></li>
+									<li><a href="datastreams.html">Data Streams</a></li>
+									<li class="current"><a href="others.html">Case studies</a>
+										<ul>
+											<li><a href="dblp.html">DBLP</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+
+					</header>
+				</div>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div class="container">
+						<div class="row 200%">
+							<div class="4u 12u$(medium)">
+								<div id="sidebar">
+								<!-- Sidebar -->
+									<section>
+										<h2>Clique Problem</h2>
+										<p>
+										It is to find a group of authors who write papers with each other more regularly than others.
+										<br>
+										In the right, we show the most frequent 1, 2 and 3 cliques.
+										</p>
+										<h2>Heavy nodes</h2>
+										<h3><i>Coauthor graph</i></h3>
+										<p>
+										A coauthor graph is an undirected and edge weighted graph. Each node is an author. Each edge between two authors means that they published some papers together, and the edge weight indicates the number of papers they published.
+										</p>
+										<h3><i>One-hop weight</i></h3>
+										<p>The one-hop weight of a node is the aggregated weight of all its edges.
+										</p>
+										<h3><i>Two-hop weight</i></h3>
+										<p>The two-hop weight of a node v is the aggregated weight of all nodes that are reachable from v in 2 hops.
+										</p>
+										<h2>Challenges</h2>		
+										<h3><i>What if the data is in streaming fashion?</i></h3>
+										<p>Listing all 3 cliques (or triangles) is a hard problem in data streams.
+										<br>No known solutions exists to find two-hop heavy hitters.
+										</p>
+										<h3><i>So why is it hard in data streams?</i></h3>
+										<p>
+										1-pass of the data
+										<br>You may not able to store all the data
+										<br>You have to do it fast (linear time?) !!!				
+										</p>
+										<h3><i>Ready to embrace approximation?</i></h3>
+									</section>
+								</div>
+							</div>
+							<div class="8u 12u$(medium) important(medium)">
+								<div id="content">
+									<!-- Content -->
+										<article>
+
+											<h2>Who published the most number of papers?</h2>
+											<h3><i>-- Also known as the most frequent 1 cliques</i></h3>
+											<p>
+												<ul>
+													<h4>count, author</h4>
+													<li>1229: H. Vincent Poor</li>
+													<li>1118: Wei Liu</li>
+													<li>1113: Yan Zhang</li>
+													<li>964: Wen Gao</li>
+													<li>943: Philip S. Yu</li>
+													<li>910: Wei Zhang</li>
+													<li>905: Wei Wang</li>
+													<li>880: Yang Yang</li>
+													<li>877: Thomas S. Huang</li>
+													<li>866: Lajos Hanzo</li>
+													<h4><a href="data/1clique.txt">Download top-10000 list</a></h4>
+												</ul>
+											</p>											
+											<h2>Which two authors published the most number of papers together?</h2>
+											<h3><i>-- Also known as the most frequent 2 cliques</i></h3>
+											<p>
+												<ul>
+													<h4>count, authors</h4>
+													<li>425: Irith Pomeranz, Sudhakar M. Reddy</li>
+													<li>328: Didier Dubois, Henri Prade</li>
+													<li>316: Makoto Takizawa, Tomoya Enokido</li>
+													<li>307: Fatos Xhafa, Leonard Barolli</li>
+													<li>277: Chun Chen, Jiajun Bu</li>
+													<li>267: Amr El Abbadi, Divyakant Agrawal</li>
+													<li>244: David Blaauw, Dennis Sylvester</li>
+													<li>241: Oscar Castillo, Patricia Melin</li>
+													<li>221: Shojiro Nishio, Takahiro Hara</li>
+													<li>196: Elizabeth Chang, Tharam S. Dillon</li>
+													<h4><a href="data/2clique.txt">Download top-10000 list</a></h4>
+												</ul>
+											</p>	
+											<h2>Which three authors published the most number of papers together?</h2>
+											<h3><i>-- Also known as the most frequent 3 cliques</i></h3>
+											<p>
+												<ul>
+													<h4>count, authors</h4>
+														<li>126: Ailixier Aikebaier, Makoto Takizawa, Tomoya Enokido</li>
+														<li>124: Bart Dhoedt, Filip De Turck, Piet Demeester</li>
+														<li>115: Carlos Miguel Tavares Calafate, Juan-Carlos Cano, Pietro Manzoni</li>
+														<li>111: Hiroshi G. Okuno, Kazunori Komatani, Tetsuya Ogata</li>
+														<li>105: Diego Calvanese, Giuseppe De Giacomo, Maurizio Lenzerini</li>
+														<li>104: Didier Colle, Mario Pickavet, Piet Demeester</li>
+														<li>104: Juan Antonio Gómez Pulido, Juan Manuel Sánchez-Pérez, Miguel A. Vega-Rodríguez</li>
+														<li>94: Dacheng Tao, Xinbo Gao, Xuelong Li</li>
+														<li>94: Mahmut T. Kandemir, Mary Jane Irwin, Narayanan Vijaykrishnan</li>
+														<li>87: Leibo Liu, Shaojun Wei, Shouyi Yin</li>
+													<h4><a href="data/3clique.txt">Download top-10000 list</a></h4>
+												</ul>
+											</p>
+											<h2>Who are one-hop heavy hitters in the co-authorship graph?</h2>
+											<p>
+												<ul>
+													<h4>rank, name, weight</h4>
+														<li>1: Wei Liu, weight = 3522</li>
+														<li>2: Yan Zhang, weight = 3409</li>
+														<li>3: Wen Gao, weight = 3356</li>
+														<li>4: H. Vincent Poor, weight = 2995</li>
+														<li>5: Yang Yang, weight = 2771</li>
+														<li>6: Wei Zhang, weight = 2765</li>
+														<li>7: Wei Wang, weight = 2683</li>
+														<li>8: Jing Li, weight = 2618</li>
+														<li>9: Hai Jin, weight = 2571</li>
+														<li>10: Leonard Barolli, weight = 2474</li>
+													<h4><a href="data/1hophh.txt">Download top-10000 list</a></h4>
+												</ul>
+											</p>
+
+											<h2>Who are two-hop heavy hitters in the co-authorship graph?</h2>
+											<p>
+												<ul>
+													<h4>rank, name, weight</h4>
+														<li>1: Wei Wang, weight = 410523</li>
+														<li>2: Wei Liu, weight = 409669</li>
+														<li>3: Yan Zhang, weight = 379298</li>
+														<li>4: Yang Yang, weight = 348728</li>
+														<li>5: Wei Zhang, weight = 336257</li>
+														<li>6: Lei Zhang, weight = 333110</li>
+														<li>7: Jing Li, weight = 333101</li>
+														<li>8: Yu Zhang, weight = 322482</li>
+														<li>9: Wei Li, weight = 309920</li>
+														<li>10: Li Zhang, weight = 309194</li>
+													<h4><a href="data/2hophh.txt">Download top-10000 list</a></h4>
+												</ul>
+											</p>															
+
+										</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	</body>
+</html>
