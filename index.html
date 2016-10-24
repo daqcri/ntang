@@ -1,22 +1,21 @@
 <!DOCTYPE HTML>
 <!--
-	Monochromed by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+	Verti by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5upx.net/license)
 -->
 <html>
 	<head>
-		<title>Nan's Data Cleaning Projects</title>		
-		<!--<link href="css/style-test.css" rel="stylesheet" media="all">-->
-
+		<title>Nan's Homepage</title>
+		<link href="css/hover.css" rel="stylesheet" media="all">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
 		<script src="js/skel.min.js"></script>
-		<script src="js/skel-panels.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -26,195 +25,171 @@
 
 		  ga('create', 'UA-18293748-5', 'auto');
 		  ga('send', 'pageview');
-		</script>		
+		</script>
+        <style>
+            .round {
+                border-radius: 50%;
+                overflow: hidden;
+                width: 265px;
+                height: 265px;
+            }
+            .round img {
+                display: block;
+            min-width: 100%;
+            min-height: 100%;
+            }
+        </style>
+
 		<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
 		</noscript>
-		<link href="css/hover.css" rel="stylesheet" media="all">
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 	</head>
-	<body>
-
-	<!-- Header -->
-	<div id="header">
-		<div class="container">
+	<body class="homepage">
+		<!-- Header -->
+		<div id="header-wrapper">
+			<header id="header" class="container">
+				<!-- Logo -->
+					<div id="logo">
+						<h1><a href="index.html">汤南</a></h1>				
+					</div>
 				
-			<!-- Logo -->
-			<div id="logo">
-				<h1><a href="#">Data Cleaning Projects</a></h1>
-				<span style="color:black">studied by Nan Tang</span>
-			</div>
-			
-			<!-- Nav -->
-			<nav id="nav">
-				<ul>
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="systems.html">Systems</a></li>						
-					<li><a href="trusted.html">Trusted Data Cleaning</a></li>
-					<li><a href="userguided.html">User Guided</a></li>
-					<li><a href="others.html">Others</a></li>						
-					<li><a href="resources.html">Resources</a></li>
-				</ul>
-			</nav>
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">Home</a></li>
+							<li>
+								<a href="research.html">Research</a>
+								<ul>
+									<li><a href="dcprojects/index.html">Data Quality Management</a></li>
+									<li><a href="datastream/index.html">Data Streams</a></li>
+									<li><a href="civilizer/index.html">Big Data Analytics</a></li>
+								</ul>
+							</li>
+							<li><a href="publications.html">Publications</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="talks.html">Talks</a></li>
+						</ul>
+					</nav>
+				
+			</header>
 		</div>
-	</div>
-	<!-- Header -->
-			
-	<!-- Main -->
-	<div id="main">
-		<div class="container">
-			<div class="row">
-				<!-- Content -->
-				<div id="content" class="8u skel-cell-important">
-					<section>
-						<header>
-							<h2>Overview</h2>
-						</header>
-						<ul class="default">
-						<p><span class="byline">Please find more details in project pages</p>
-						<p><img src="images/overview.jpg" width="750" alt=""></p>
-					</section>
-					<section>
-						<header>
-							<h2>Publications</h2>
-							<p>
-								<br><b><i>Detecting Data Errors: Where are we and what needs to be done?</i></b>
-								<br><font color="blue">The 42nd International Conference on Very Large Data Bases (VLDB), New Delhi, India, 2016 </font>
-								<br><i>	Ziawasch Abedjan, Xu Chu, Dong Deng, Raul Castro Fernandez, Ihab F. Ilyas, Mourad Ouzzani, Paolo Papotti, Michael Stonebraker, and Nan Tang </i>
-								<br>
-
-								<br><b><i>Interactive and Deterministic Data Cleaning: A Tossed Stone Raises a Thousand Ripples </i></b>
-								<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), San Francisco, USA, 2016 </font>
-								<br><i>Jian He, Enzo Veltri, Donatello Santoro, Guoliang Li, Giansalvatore Mecca, Paolo Papotti, and Nan Tang</i>
-								<br>
-
-								<br><b><i>BigDansing: A System for Big Data Cleansing</i></b>
-								<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), Melbourne, Australia, 2015</font>
-								<br><i>Zuhair Khayyat, Ihab F. Ilyas, Alekh Jindal, Sam Madden, Mourad Ouzzani, Paolo Papotti, Jorge-Arnulfo Quiane-Ruiz, Nan Tang and Si Yin</i>
-								<br>	
-
-								<br><b><i>KATARA: A Data Cleaning System Powered by Knowledge Bases and Crowdsourcing </i></b>
-								<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), Melbourne, Australia, 2015 </font>
-								<br><i>Xu Chu, John Morcos, Ihab F. Ilyas, Mourad Ouzzani, Paolo Papotti, Nan Tang and Yin Ye</i>	
-								<br>
-
-								<br><b><i>KATARA: Reliable Data Cleaning with Knowledge Bases and Crowdsourcing</i></b> 
-								<br><font color="blue">The 41st International Conference on Very Large Data Bases (VLDB) (Demo), Kohala Coast, Hawai'i, 2015 </font>
-								<br><i>Xu Chu, John Morcos, Ihab F. Ilyas, Mourad Ouzzani, Paolo Papotti, Nan Tang and Yin Ye</i><br>	
-
-								<br><b><i>Proof Positive and Negative in Data Cleaning</i></b>
-								<br><font color="blue">The 31st International Conference on Data Engineering (ICDE), Seoul, Korea, 2015</font>
-								<br><i>Matteo Interlandi and Nan Tang</i>
-								<br>
-							
-								<br><b><i>Incremental Detection of Inconsistencies in Distributed Data</i></b>
-								<br><font color="blue">IEEE Transaction on Knowledge and Data Engineering (TKDE): </font> <font color="red">  (Special issue: Best Papers of ICDE 2012, invited) </font>
-								<br><i>Wenfei Fan, Jianzhong Li, Nan Tang, and Wenyuan Yu</i><br>							
-								<br><b><i>Towards Dependable Data Repairing with Fixing Rules</i></b>
-								<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), Snowbird, USA, 2014</font>
-								<br><i>Jiannan Wang and Nan Tang</i>
-								<br>								
-
-								<br><b><i>Interaction between Record Matching and Data Repairing</i></b> 
-								<br><font color="blue">ACM Journal of Data and Information Quality (JDIQ), 2014</font>
-								<br><i>Wenfei Fan, Shuai Ma, Nan Tang, and Wenyuan Yu *</i>
-								<br>
-
-								<br><b><i>NADEEF/ER: Generic and Interactive Entity Resolution</i></b>
-								<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD demo), Snowbird, USA, 2014</font>
-								<br><i>Ahmed Elmagarmid, Ihab F. Ilyas, Mourad Ouzzani, Jorge Quiane-Ruiz, Nan Tang, and Si Yin</i>	
-								<br>
-
-								<br><b><i>NADEEF: A Commodity Data Cleaning System </i></b>
-								<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), New York, US, 2013</font>
-								<br><i>Michele Dallachiesa, Amr Ebaid, Ahmed Eldawy, Ahmed Elmagarmid, Ihab F. Ilyas, Mourad Ouzzani, and Nan Tang</i>
-								<br>
-							
-								<br><b><i>NADEEF: A Generalized Data Cleaning System </i></b>
-								<br><font color="blue">The 39th International Conference on Very Large Data Bases (VLDB Demo), Riva del Garda, Trento, Italy, 2013</font>
-								<br><i>Amr Ebaid, Ahmed Elmagarmid, Ihab F. Ilyas, Mourad Ouzzani, Jorge Quiane-Ruiz, Nan Tang, and Si Yin</i>
-								<br>
-
-								<br><b><i>Conflict Resolution with Data Currency and Consistency</i></b>
-								<br><font color="blue">ACM Journal of Data and Information Quality (JDIQ) </font><font color="red">(invited)</font>, 2014
-								<br><i>Wenfei Fan, Floris Geerts, Nan Tang, and Wenyuan Yu </i>
-								<br>
-							
-								<br><b><i>Inferring Data Currency and Consistency for Conflict Resolution</i></b>
-								<br><font color="blue">The 29th International Conference on Data Engineering (ICDE), Brisbane, Australia, 2013</font></font>
-								<br><i>Wenfei Fan, Floris Geerts, Nan Tang, and Wenyuan Yu</i>
-								<br>	
-
-								<br><b><i>Data Quality Problems beyond Consistency and Deduplication  </i></b> 
-								<br><font color="blue">In search of elegance in the theory and practice of computation: a Festschrift in honour of Peter Buneman, Edinburgh, UK, 2013. </font> <font color="red"> (invited) </font>
-								<br><i>Wenfei Fan, Floris Geerts, Shuai Ma, Nan Tang, and Wenyuan Yu </i><br>
-
-								<br><b><i>Towards Certain Fixes with Editing Rules and Master Data</i></b>
-								<br><font color="blue">The VLDB Journal (VLDBJ) 21(2): 213-238, 2012</font><font color="red"> (Special issue: Best Papers of VLDB 2010, invited)</font>
-								<br><i>Wenfei Fan, Jianzhong Li, Shuai Ma, Nan Tang, and Wenyuan Yu </i>
-								<br>
-
-								<br><b><i>Incremental Detection of Inconsistencies in Distributed Data</i></b>
-								<br><font color="blue">The 28th International Conference on Data Engineering (ICDE), Washington DC, US, 2012</font>
-								<br><i>Wenfei Fan, Jianzhong Li, Nan Tang, and Wenyuan Yu</i><br>
-										
-								<br><b><i>Interaction Between Record Matching and Data Repairing </i></b> 
-								<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), Athens, Greece, 2011</font>
-								<br><i>Wenfei Fan, Jianzhong Li, Shuai Ma, Nan Tang, and Wenyuan Yu</i><br>
-
-								<br><b><i>Towards Certain Fixes with Editing Rules and Master Data</i></b>
-								<br><font color="blue">The 36th International Conference on Very Large Data Bases (VLDB), Singapore, 2010</font><font color="red"> (the best paper award)</font>
-								<br><i>Wenfei Fan, Jianzhong Li, Shuai Ma, Nan Tang, and Wenyuan Yu </i>
-								<br>
-							</p>
-						</header>
-					</section>					
-				</div>
-				<!-- /Content -->
-					
-				<!-- Sidebar -->
-				<div id="sidebar" class="4u">
-					<section>
-						<header>
-							<h2>Short Description</h2> 
-						</header>
-						<p><b>NADEEF</b> is a data cleaning platform, which abstracts a set of programming APIs such that heterogeneous data quality rules (<i>e.g.,</i> conditional functional dependencies, editing rules and sherlock rules) can be implememted in a homogeneous way. NADEEF also provides a runtime execution engine to detect data violations. We also provide a graphical HTML5 user interface to help users navigate and understand their data in order to improve the rule quality.</p>
-						<p><b>FALCON</b> is an interactive, deterministic, and declarative data cleaning system.</p>
-						<p><b>KATARA</b> is a trusted data cleaning system powered by knowledge bases and crowdsourcing.</p>
-						
-
-						<br /><br /><br />
-						<div class="aligncenter">
-								<a class="button cta hvr-float-shadow" href="../index.html">Go Back to Nan's Homepage</a>
-						</div>
-					</section>
-				</div>
-				<!-- Sidebar -->		
-			</div>
-		</div>
-	</div>
-	<!-- Main -->
-
-	<!-- Footer -->
-	<div id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="12u">
-					<section>
-						<header>
-							<h2>A long way to go  . . .</h2>
-						</header>
-						<p>Without a shadow of a doubt, data cleaning has played an important part in the history of data management and data analytics. Possessing high quality data has been proven to be crucial for businesses to do data driven decision making, especially within the information age and the era of big data.
-						However, in general, data cleaning problems are very hard, and heuristic algorithms are widely used, which fall short of any accurcy guranttees. Many researches have been conducted by using relaible external sources, such as master data, users, knowledge bases, confidence values. They shed considerable light on effective data cleaning. In the real world, there is still a long way to go. </p>
-						<p>
-						</p>
-					</section>
+		
+		<!-- Banner -->
+		<div id="banner-wrapper">
+			<div id="banner" class="box container">
+				<div class="row">
+					<div class="6u">
+						<h2>Dr. Nan Tang</h2>	
+						<h3>Senior Scientist</h3>
+						<b><i><a href="http://www.qcri.qa/">Qatar Computing Research Institute</a>, <a href="http://www.hbku.edu.qa">HBKU</a></i></b>
+						<br><b><i>Doha, Qatar</i></b>
+						<h4> <a class="tutorial hvr-pop" href="mailto:ntang@qf.org.qa/">email: ntang@qf.org.qa</a></h4>	
+					</div>
+					<div class="6u">
+						<img src="images/nan.jpg" height="250" alt="" />
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- Footer -->
+		
+		<!-- Features -->
+		<div id="features-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="4u">						
+						<!-- Box -->
+						<section class="box feature">							
+							<li class="button big icon fa-server:before" style="background:green"> &nbsp &nbsp &nbsp Biography &nbsp &nbsp &nbsp </li>	
+							<div class="inner">
+								<p><b>Dr. Nan Tang</b> is a senior scientist at Qatar Computing Research Institute (QCRI), HBKU, Doha, Qatar. Prior to joining QCRI in Dec 2011, He was a Research Fellow at LFCS (Laboratory for Foundations of Computer Science) at the University of Edinburgh, Edinburgh, UK (2010--2011). He was a scientific staff member with the CWI (Dutch National Research Center for Mathematics and Computer Science), Amsterdam, Netherlands (2008--2010). He got his PhD. degree from The Chinese University of Hong Kong, China (2007). He holds a visiting position at University of Waterloo, Canada (03/2007-08/2007).</p>
+								<div class="aligncenter">
+									<a class="button cta hvr-float-shadow" href="pubs/nan_resume.pdf" style="background:green">My CV</a>
+								</div>								
+							</div>
+						</section>
+					</div>
+					<div class="4u">
+						<!-- Box -->
+						<section class="box feature">
+							<a href="research.html" class="button big icon fa-chevron-left:before"  class="hvr-glow"> &nbsp &nbsp &nbsp Research &nbsp &nbsp &nbsp &nbsp</a>							
+							<div class="inner">
+								<header>
+									<h2>Data Quality Management</h2>
+									<p>Theory, algorithms, and systems</p>
+								</header>
+								<header>
+									<h2>Data Streams</h2>
+									<p>Managing and Mining</p>
+								</header>
+								<header>										
+									<h2>Big Data Analytics</h2>
+									<p>Agile distributed data processing system</p>
+								</header>								
+								<!--Copytright: <a href='http://www.123rf.com/profile_alphaspirit'>alphaspirit / 123RF Stock Photo</a>-->
+								<a href="research.html" class="hvr-glow"><img src="images/idea.jpg" width="320" alt="" /></a>
+								<br><br>
+								<a href="research.html" class="button icon fa-file-text-o">Read more</a>
+							</div>
+						</section> 
+					</div>
+					<div class="4u">				
+						<!-- Box -->
+						<section class="box feature last">
+							<li class="button big icon fa-server:before"  style="background:red"> &nbspAwards & Talks&nbsp </li>	
+							<div class="inner">
+								<header>										
+									<h2>  VLDB 2010: best paper award</h2>
+									<p> Towards Certain Fixes with Editing Rules and Master Data</p>		
+									<div class="round" >
+										<img src="images/vldbbest.jpg" height="160" alt="" />
+									</div>
+								</header>
+								<br />
+								<header>										
+									<h2>  APWeb 2014: distinguished lecture series</h2>
+									<p> Big Data Cleaning</p>											
+								</header>
+								<br>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div id="footer-wrapper">
+			<footer id="footer" class="container">
+				<div class="row">
+					<div class="3u">				
+						<!-- Contact -->
+						<section class="widget contact last">							
+							<h3>Contact Me</h3>
+							<ul>
+								<li><a href="https://www.facebook.com/nan.tang" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://www.flickr.com/photos/nantang/collections/" class="icon fa-instagram"><span class="label">Flickr</span></a></li>
+								<li><a href="https://twitter.com/ntang928" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							</ul>
+							<p> Qatar Computing Research Institute<br /> 
+								Hamad Bin Khalifa University<br /> 
+								S1124, HBKU Research Complex<br />
+								Doha, Qatar<br/>
+								(974) 44542850</p>
+						</section>				
+					</div>
+					<div class="6u">
+						<h4>Countries visited</h4>
+						<img src="http://chart.apis.google.com/chart?cht=map:fixed=-70,-180,80,180&chs=450x300&chf=bg,s,336699&chco=d0d0d0,cc0000&chd=s:99999999999999999999999999999999999999999999999&chld=VA|GB|CH|SE|ES|SI|NO|NL|MC|LU|IT|IS|GR|HU|DE|FR|DK|CZ|HR|BE|AT|AU|BH|CN|IR|JP|JO|OM|TR|TH|LK|SG|QA|MX|US|CA|SC|KR|MU|KE|TZ|SA|ID|IN|MV|FI|EE" width="450" height="300" ><br/>visited 47 states (20.8%)<br/><a href="http://douweosinga.com/projects/visited?region=world">Create your own visited map of The World</a>
+					</div>				
+					<div class="3u">
+						<h4>Visitors to this page come from:</h4>
+						<div id="clustrmaps-widget"></div><script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?u=V1Tp&d=xwu-i7DKewjLuClEMS1KRUy-coXZEhzgFO-7-gRW6xQ"></script>
+					</div>
+				</div>
+			</footer>
+		</div>										
 	</body>
 </html>
