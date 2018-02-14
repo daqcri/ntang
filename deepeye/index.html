@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+	Transit by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>DeepEye: Democratizing Data Visualization</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+			<!--
+			<header id="header">
+				<h1><a href="index.html">Transit</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html">Generic</a></li>
+						<li><a href="elements.html">Elements</a></li>
+						<li><a href="#" class="button special">Sign Up</a></li>
+					</ul>
+				</nav>
+			</header>
+			-->
+
+		<!-- Banner -->
+			<section id="banner">
+				<h2>DeepEye: Democratizing Data Visualization</h2>
+				<p>Here is my data, show me its compelling stories by visualization!</p>
+				<ul class="actions">
+					<li>
+						<a href="http://da.qcri.org/ntang/index.html" class="button big">
+						Back to Nan's Homepage</a>
+					</li>
+				</ul>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Why?</h2>
+						<p>A picture is worth a thousand words. A good visualization is worth a terabyte of data. Nowadays, the ability to create good visualizations has shifted from a nice-to-have skill to a must-have skill for all data analysts to help managers make business decisions, where data is the primary force behind for its high volume and overwhelming velocity.
+						Despite the overwhelming choices of interactive data visualizaiton tools for experts, non-experts have poor choices for effective visualization recommendation systems such that everyone can easily create great visualizations.</p>
+
+						<h2>What are the fundamental problems?</h2>
+
+						<div class="row 150%">
+							<div class="4u 12u$(medium)">							
+								<section class="box">
+									<i class="icon big rounded color1 fa-bar-chart"></i>
+									<h3>Visualization Recognition</h3>
+									<p>Given one visualization, such as a bar chart or a scatter plot, is it good from understanding human perception?</p>
+								</section>
+							</div>
+							<div class="4u 12u$(medium)">
+								<section class="box">
+									<i class="icon big rounded color9 fa-graduation-cap"></i>
+									<h3>Visualization Ranking</h3>
+									<p>Given two visualizations, can we quantify them and say that which one is better?</p>
+								</section>
+							</div>
+							<div class="4u$ 12u$(medium)">
+								<section class="box">
+									<i class="icon big rounded color6 fa-search"></i>
+									<h3>Visualization Searching</h3>
+									<p>It might be very hard, if not impossible, to guess what a user really wants. Can they do simple keyword like search?</p>
+								</section>
+							</div>
+						</div>
+
+						<h2>How?</h2>
+
+						<p>Our basic idea is "visualizatio by examples" – there are plenty of generic priors to showcase great visualizations, which can be used to learn human perception, e.g., a bar chart with more than 50 bars is clearly bad.
+						</p>
+
+						<p>
+						Given thousands of good examples and some human labeled ranking orders, 
+						DeepEye trains a binary classifier (a random forest, or a SVM) for visualization recognition, and uses a supervised learning-to-rank model for visualization ranking.
+						</p>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2 special">
+				<div class="container">
+					<header class="major">
+						<h2>Publications</h2>
+					</header>
+					
+					<p style="text-align:left">
+					<b><i>DeepEye: Visualizing Your Data by Keyword Search</i></b>
+					<br><font color="blue">The 21st International Conference on Extending Database Technology (EDBT vision paper), Austria, Vienna, 2018 </font>
+					<br><i>Xuedi Qin, Yuyu Luo, Nan Tang, and Guoliang Li</i>
+					</p>
+
+					<p style="text-align:left">
+					<b><i>DeepEye: Towards Automatic Data Visualization</i></b> 
+					<br><font color="blue">The 34th IEEE International Conference on Data Engineering (ICDE), Paris, France, 2018 </font>
+					<br><i>Yuyu Luo, Xuedi Qin, Nan Tang, and Guoliang Li</i>
+					</p>
+				</div>
+				<footer>
+					<ul class="actions">
+						<li>
+							<a href="http://www.deepeye.tech" class="button big">Try our online demo!</a>
+						</li>
+					</ul>
+				</footer>
+			</section>
+	</body>
+</html>
