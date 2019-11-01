@@ -1,634 +1,624 @@
 <!DOCTYPE HTML>
 <!--
 	Verti by HTML5 UP
-	html5up.net | @n33co
+	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Nan's Publications</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.dropotron.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-18293748-5', 'auto');
-		  ga('send', 'pageview');
-		</script>		
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<title>Nan - Publications</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="no-sidebar">
-		<!-- Header -->
-		<div id="header-wrapper">
-			<header id="header" class="container">		
-				<!-- Logo -->
-				<div id="logo">
-					<h1><a href="index.html">Nan Tang</a></h1>						
-				</div>
-				
-				<!-- Nav -->
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li>
-							<a href="research.html">Research</a>
-								<!--
+	<body class="is-preload no-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+						<!-- Logo -->
+							<div id="logo">
+								<h1><a href="index.html">Nan Tang</a></h1>								
+							</div>
+
+						<!-- Nav -->
+							<nav id="nav">
 								<ul>
-									<li><a href="dcprojects/index.html">Data Quality</a></li>
-									<li><a href="datastream/index.html">Internet of Things</a></li>
-									<li><a href="civilizer/index.html">Big Data Analytics</a></li>
+									<li><a href="index.html">HOME</a></li>
+									<li>
+										<a href="projects.html">PROJECTS</a>
+										<ul>
+											<li><a href="dataprep.html">Data Preparation</a></li>
+											<li><a href="smartdata.html">Smart Data Systems</a></li>
+											<li><a href="crowd.html">Collaborative Data Science</a></li>
+										</ul>
+									</li>			
+									<li class="current"><a href="publications.html">PUBLICATIONS</a></li>
+									<li><a href="bio.html">BIO</a></li>
+									<li><a href="awards.html">AWARDS</a></li>
+									<li><a href="talks.html">TALKS</a></li>
+									<li><a href="services.html">SERVICE</a></li>
 								</ul>
-								-->
-						</li>
-						<li class="current"><a href="publications.html">Publications</a></li>
-						<li><a href="services.html">Services</a></li>
-						<li><a href="talks.html">Talks</a></li>
-					</ul>
-				</nav>				
-			</header>
-		</div>
-		
-		<!-- Main -->
-		<div id="main-wrapper">
-			<div class="container">
-				<div id="content">
-					<!-- Content -->
-					<article>
-						<h3>The symbol “*” means that the senior authors are listed in alphabetical order</h3>
-
-<!-- 
-						<h3>arXiv</h3>	
-						<p>
-						<b><i>Deductive Optimization of Relational Data Storage</i></b> <a href="https://arxiv.org/abs/1903.03229">[link]</a>					
-						<br><i>John K. Feser, Samuel Madden, Nan Tang, and Armando Solar-Lezama </i>
-						</p>	
-
-						<p>
-						<b><i>Data Curation with Deep Learning [Vision]</i></b> <a href="https://arxiv.org/abs/1803.01384">[link]</a>					
-						<br><i>Saravanan Thirumuruganathan, Nan Tang, Mourad Ouzzani, and AnHai Doan </i>
-						</p>	
-
-						<p>
-						<b><i>Reuse and Adaptation for Entity Resolution through Transfer Learning</i></b> <a href="http://arxiv.org/abs/1809.11084">[link]</a>					
-						<br><i>Saravanan Thirumuruganathan, Shameem A Puthiya Parambath, Mourad Ouzzani, Nan Tang, and Shafiq Joty </i>
-						</p>
- -->
- 
-						<h2>2020</h2>	
-						<p>
-						<b><i>Dagger: A Data (not code) Debugger</i></b> <a href="pubs/cidr20dagger.pdf">[pdf]</a>
-						<br><font color="blue">The Conference on Innovative Data Systems Research (CIDR), Amsterdam, Netherlands, 2020 </font>
-						<br><i>El Kindi Rezig, Lei Cao, Giovanni Simonini, Maxime Schoemans, Samuel Madden, Mourad Ouzzani, Nan Tang, and Michael Stonebraker</i>
-						</p>	
-
-
-						<p>
-						<b><i>Interactive Cleaning for Progressive Visualization through Composite Questions</i></b>  <a href="pubs/icde20vis.pdf">[pdf]</a>
-						<br><font color="blue">The 36th IEEE International Conference on Data Engineering (ICDE), Dallas, Texas, USA, 2020 </font>
-						<br><i>Yuyu Luo, Chengliang Chai, Xuedi Qin, Nan Tang, and Guoliang Li</i>
-						</p>	
-
-						<p>
-						<b><i>Reinforcement Learning with Tree-LSTM for Join Order Selection</i></b> <a href="pubs/cidr20jos.pdf">[pdf]</a>
-						<br><font color="blue">The 36th IEEE International Conference on Data Engineering (ICDE), Dallas, Texas, USA, 2020 </font>
-						<br><i>Xiang Yu, Guoliang Li, Chengliang Chai, and Nan Tang</i>
-						</p>	
-
-						<p>
-						<b><i>Making Data Visualization More Efficient and Effective: A Survey</i></b> <a href="pubs/vldbjvissurvey.pdf">[pdf]</a>
-						<br><font color="blue">The VLDB Journal (VLDBJ), to appear </font>
-						<br><i>Xuedi Qin, Yuyu Luo, Nan Tang, and Guoliang Li</i>
-						</p>	
-
-
-						<p>
-						<b><i>Efficient Algorithms for Approximate Single-Source Personalized PageRank Queries</i></b> <a href="https://arxiv.org/abs/1908.10583">[pdf]</a>
-						<br><font color="blue">ACM Transactions on Database Systems (TODS), to appear </font>
-						<br><i>Sibo Wang, Renchi Yang, Runhui Wang, Xiaokui Xiao, Zhewei Wei, Wenqing Lin, Yin Yang and Nan Tang</i>
-						</p>	
-
-
-						<h2>2019</h2>	
-						<p>
-						<b><i>Data Civilizer 2.0: A Holistic Framework for Data Preparation and Analytics</i></b> <a href="pubs/vldb2019demo.pdf">[pdf]</a>
-						<br><font color="blue">The 45th International Conference on Very Large Data Bases (VLDB demo), Los Angeles, California, 2019 </font>
-						<br><i>El Kindi Rezig, Lei Cao, Michael Stonebraker, Giovanni Simonin, Wenbo Tao, Samuel Madden, Mourad Ouzzani, Nan Tang, and Ahmed K. Elmagarmid</i>
-						</p>	
-
-						<p>
-						<b><i>Querying Shortest Paths on Time Dependent Road Networks</i></b> <a href="pubs/vldb2019.pdf">[pdf]</a>
-						<br><font color="blue">The 45th International Conference on Very Large Data Bases (VLDB), Los Angeles, California, 2019 </font>
-						<br><i>Yong Wang, Guoliang Li, and Nan Tang</i>
-						</p>	
-
-
-						<p>
-						<b><i>Raha: A Configuration-Free Error Detection System</i></b> <a href="pubs/raha.pdf">[pdf]</a>
-						<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), Amsterdam, The Netherlands, 2019 </font>
-						<br><i>Mohammad Mahdavi, Ziawasch Abedjan, Raul Castro Fernandez, Samuel Madden, Mourad Ouzzani, Michael Stonebraker, and Nan Tang * </i>
-						</p>	
-
-						<p>
-						<b><i>ANMAT: Automatic Knowledge Discovery and Error Detection through Pattern Functional Dependencies</i></b> <a href="pubs/[sigmod2019demo]pfds.pdf">[pdf]</a>
-						<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD Demo), Amsterdam, The Netherlands, 2019 </font>
-						<br><i>Abdulhakim Qahtan, Nan Tang, Mourad Ouzzani, Yang Cao, Michael Stonebraker</i>
-						</p>	
-
-						<p>
-						<b><i>Towards Democratizing Relational Data Visualization [Tutorial]</i></b> 
-						<a href="pubs/sigmod2019tutorial.pdf">[pdf]</a> 
-						<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD Tutorial), Amsterdam, The Netherlands, 2019 </font>
-						<br><i>Nan Tang, Eugene Wu and Guoliang Li</i>
-						<br> <b>Presentations:</b> Introduction, 30 mins <a href="pubs/nan.part1.key">[keynote]</a>; 
-						Efficient data visualization, 1 hour <a href="pubs/wu.pptx">[ppt]</a>; 
-						Smart data visualization, 1 hour <a href="pubs/guoliang.key">[keynote]</a>; 
-						Uncertainty, collaborative and immersive data visualization, 30 mins <a href="pubs/nan.part4.key">[keynote]</a>
-						</p>									
-
-						<p>
-						<b><i>Explaining Entity Resolution Predictions : Where are we and What needs to be done?</i></b> <a href="pubs/hilda2019.pdf">[pdf]</a>
-						<br><font color="blue">Workshop on Human-In-the-Loop Data Analytics (HILDA, Co-located with SIGMOD 2019), Amsterdam, The Netherlands, 2019 </font>
-						<br><i>Saravanan Thirumuruganathan, Mourad Ouzzani, and Nan Tang</i>
-						</p>									
-
-
-						<p>
-						<b><i>Data Civilizer: End-to-End Support for Data Discovery, Integration, And Cleaning [Book Chapter]</i></b> <a href="http://www.morganclaypoolpublishers.com/stonebraker/">[link]</a> 
-						<br><font color="blue">Making Databases Work: The Pragmatic Wisdom of Michael Stonebraker </font>
-						<br><i>Mourad Ouzzani, Nan Tang, and Raul Castro Fernandez</i>
-						</p>									
-
-						<p>
-						<b><i>Unsupervised String Transformation Learning for Entity Consolidation </i></b> <a href="pubs/icde2019.pdf">[pdf]</a> 
-						<br><font color="blue">The 35th IEEE International Conference on Data Engineering (ICDE), Macau SAR, China, 2019 </font>
-						<br><i>Dong Deng, Wenbo Tao, Ziawasch Abedjan, Ahmed Elmagarmid, Ihab F. Ilyas, Guoliang Li, Samuel Madden, Mourad Ouzzani, Michael Stonebraker, and Nan Tang * </i>
-						</p>
-						
-						<h2>2018</h2>
-						<p>
-						<b><i>Distilling Relations using Knowledge Bases</i></b> <a href="pubs/vldbj2018.pdf">[pdf]</a> 
-						<br><font color="blue">The VLDB Journal (VLDBJ), 2018</font>
-						<br><i>Shuang Hao, Nan Tang, Guoliang Li, Jian Li, and Jianhua Feng</i>
-						</p>
-
-						<p>
-						<b><i>FAHES: A Robust Disguised Missing Values Detector</i></b> <a href="pubs/kdd18.pdf">[pdf]</a>
-						<br><font color="blue">The 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (SIGKDD 2018), Long Presentation, Research Track, London, UK, 2018 </font>
-						<br><i>Abdulhakim A. Qahtan, Ahmed Elmagarmid, Raul Castro Fernandez, Mourad Ouzzani, and Nan Tang *</i>
-						</p>
-												
-						<p>
-						<b><i>Distributed Representations of Tuples for Entity Resolution </i></b> <a href="pubs/vldb18-deeper.pdf">[pdf]</a>
-						<br><font color="blue">The 44th International Conference on Very Large Data Bases (VLDB), Rio de Janeiro, Brazil, 2018 </font>
-						<br><i>Muhammad Ebraheem, Saravanan Thirumuruganathan, Shafiq Joty, Mourad Ouzzani, and Nan Tang *</i>
-						</p>
-
-						<p>
-						<b><i>Synthesizing Entity Matching Rules by Examples</i></b> <a href="pubs/synthesizer.pdf">[pdf]</a>
-						<br><font color="blue">The 44th International Conference on Very Large Data Bases (VLDB), Rio de Janeiro, Brazil, 2018 </font>
-						<br><i>Rohit Singh, Vamsi Meduri, Ahmed Elmagarmid, Samuel Madden, Paolo Papotti, Jorge-Arnulfo Quiané-Ruiz, Armando Solar-Lezama and Nan Tang *</i>
-						</p>
-
-						<p>
-						<b><i>RHEEM: A Cross-Platform Data Processing System</i></b> <a href="pubs/vldb18-rheem.pdf">[pdf]</a>
-						<br><font color="blue">The 44th International Conference on Very Large Data Bases (VLDB), Rio de Janeiro, Brazil, 2018 </font>
-						<br><i>Divy Agrawal, Sanjay Chawla1, Bertty Contreras, Ahmed Elmagarmid,1 Yasser Idris, Zoi Kaoudi, Sebastian Kruse, Ji Lucas, Essam Mansour, Mourad Ouzzani, Paolo Papotti, Jorge-Arnulfo Quiané-Ruiz, Nan Tang, Saravanan Thirumuruganathan, and Anis Troudi *</i>
-						</p>
-
-						<p>
-						<b><i>DeepEye: Creating Good Data Visualizations by Keyword Search</i></b> <a href="pubs/deepeyesigmod2018demo.pdf">[pdf]</a>
-						<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD demo), Houston, USA, 2018 </font>
-						<br><i>Yuyu Luo, Xuedi Qin, Nan Tang, Guoliang Li and Xinran Wang</i>
-						</p>
-
-						<p>
-						<b><i>DeepEye: Visualizing Your Data by Keyword Search</i></b> <a href="pubs/edbt2018.pdf">[pdf]</a>
-						<br><font color="blue">The 21st International Conference on Extending Database Technology (EDBT vision paper), Austria, Vienna, 2018 </font>
-						<br><i>Xuedi Qin, Yuyu Luo, Nan Tang, and Guoliang Li</i>
-						</p>
-
-						<p>
-						<b><i>DeepEye: Towards Automatic Data Visualization</i></b> <a href="pubs/icde2018deepeye.pdf">[pdf]</a>
-						<br><font color="blue">The 34th IEEE International Conference on Data Engineering (ICDE), Paris, France, 2018 </font>
-						<br><i>Yuyu Luo, Xuedi Qin, Nan Tang, and Guoliang Li</i>
-						</p>
-
-						<p>
-						<b><i>Seeping Semantics: Linking Datasets using Word Embeddings for Data Discovery</i></b> <a href="pubs/icde2018semantic.pdf">[pdf]</a>
-						<br><font color="blue">The 34th IEEE International Conference on Data Engineering (ICDE), Paris, France, 2018</font>
-						<br><i>Raul Castro Fernandez, Essam Mansour, Abdulhakim Qahtan, Ahmed Elmagarmid, Ihab F. Ilyas, Samuel Madden, Mourad Ouzzani, Michael Stonebraker and Nan Tang *</i>
-						</p>
-
-						<p>
-						<b><i>Discovering Mis-Categorized Entities</i></b> <a href="pubs/icde2018miscategorized.pdf">[pdf]</a>
-						<br><font color="blue">The 34th IEEE International Conference on Data Engineering (ICDE), Paris, France, 2018</font>
-						<br><i>Shuang Hao, Nan Tang, Guoliang Li and Jianhua Feng</i>
-						</p>
-
-						<p>
-						<b><i>Cleaning Your Wrong Google Scholar Entries</i></b> <a href="pubs/icde2018demo.cleaning.google.scholar.pdf">[pdf]</a>
-						<br><font color="blue">The 34th IEEE International Conference on Data Engineering (ICDE demo), Paris, France, 2018</font>
-						<br><i>Shuang Hao, Yi Xu, Nan Tang, Guoliang Li and Jianhua Feng</i>
-						</p>
-
-						<p>
-						<b><i>FAHES: Detecting Disguised Missing Values</i></b> <a href="pubs/icde2018demofahes.pdf">[pdf]</a>
-						<br><font color="blue">The 34th IEEE International Conference on Data Engineering (ICDE demo), Paris, France, 2018</font>
-						<br><i>Abdulhakim A. Qahtan, Ahmed Elmagarmid, Mourad Ouzzani, and Nan Tang *</i>
-						</p>		
-
-						<p>
-						<b><i>Building Data Civilizer Pipelines with an Advanced Workflow Engine</i></b> <a href="pubs/icde2018demo.civilizer.pdf">[pdf]</a>
-						<br><font color="blue">The 34th IEEE International Conference on Data Engineering (ICDE demo), Paris, France, 2018</font>
-						<br><i>Essam Mansour, Dong Deng, Raul Castro Fernandez, Abdulhakim Qahtan, Wenbo Tao, Ziawasch Abedjan, Ahmed Elmagarmid, Ihab F. Ilyas, Samuel Madden, Mourad Ouzzani, Michael Stonebraker and Nan Tang *</i>
-						</p>		
-
-						<h2>2017</h2>
-						<p>
-						<b><i>UGuide – User-Guided Discovery of FD-Detectable Errors</i></b> <a href="pubs/sigmod2017.pdf">[pdf]</a>
-						<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), Chicago, USA, 2017 </font>
-						<br><i>Saravanan Thirumuruganathan, Laure Berti-Equille, Mourad Ouzzani, Jorge-Arnulfo Quiane-Ruiz and Nan Tang *</i>
-						</p>	
-
-						<p>
-						<b><i>A Demo of the Data Civilizer System</i></b> <a href="pubs/sigdm1.pdf">[pdf]</a>
-						<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD demo), Chicago, USA, 2017 </font>
-						<br><i>Raul Castro Fernandez, Dong Deng, Essam Mansour, Abdulhakim Qahtan, Wenbo Tao, Ziawasch Abedjan, Ahmed Elmagarmid, Ihab F. Ilyas, Samuel Madden, Mourad Ouzzani, Michael Stonebraker and Nan Tang *</i>
-						</p>	
-
-						<p>
-						<b><i>Generating Concise Entity Matching Rules</i></b> <a href="pubs/sigdm2.pdf">[pdf]</a>
-						<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD demo), Chicago, USA, 2017 </font>
-						<br><i>Rohit Singh, Vamsi Meduri, Ahmed Elmagarmid, Samuel Madden, Paolo Papotti, Jorge-Arnulfo Quiané-Ruiz, Armando Solar-Lezama and Nan Tang *</i>
-						</p>	
-					
-						<p>						
-						<b><i>Cleaning Relations using Knowledge Bases</i></b> <a href="pubs/icde2017.pdf">[pdf]</a>
-						<br><font color="blue">The 33st International Conference on Data Engineering (ICDE), San Diego, California, USA, 2017</font>
-						<br><i>Shuang Hao, Nan Tang, Guoliang Li and Jian Li</i>
-						</p>
-
-						<p>
-						<b><i>Dependable Data Repairing with Fixing Rules</i></b> <a href="">[pdf]</a> 
-						<br><font color="blue">ACM Journal of Data and Information Quality (JDIQ), 2017</font>
-						<br><i>Jiannan Wang, and Nan Tang</i>
-						</p>
-
-						<p>
-						<b><i>A Novel Cost-Based Model for Data Repairing</i></b> <a href="pubs/tkde2017.pdf">[pdf]</a>
-						<br><font color="blue">IEEE Transaction on Knowledge and Data Engineering (TKDE), 2017</font> 
-						<br><i>Shuang Hao, Nan Tang, Guoliang Li, Jian He, Na Ta, and Jianhua Feng</i>
-						</p>
-
-
-						<p>
-						<b><i>A Novel Cost-Based Model for Data Repairing (Extended Abstract)</i></b> <a href="pubs/icde2017tkdeposters.pdf">[pdf]</a>
-						<br><font color="blue">The 33st International Conference on Data Engineering (ICDE/TKDE posters), San Diego, California, USA, 2017</font> 
-						<br><i>Shuang Hao, Nan Tang, Guoliang Li, Jian He, Na Ta, and Jianhua Feng</i>
-						</p>
-
-						<p>						
-						<b><i>The Data Civilizer System</i></b> <a href="pubs/cidr2017.pdf">[pdf]</a>
-						<br><font color="blue">The biennial Conference on Innovative Data Systems Research (CIDR), Chaminade, California, USA, 2017</font> 
-						<br><i>Dong Deng, Raul Castro Fernandez, Ziawasch Abedjan, Sibo Wang, Michael Stonebraker, Ahmed Elmagarmid, Ihab F. Ilyas, Samuel Madden, Mourad Ouzzani and Nan Tang *</i>
-						</p>
-
-						<p>						
-						<b><i>Fast and Scalable Inequality Joins</i></b> <a href="pubs/vldbj2016.pdf">[pdf]</a>
-						<br><font color="blue">The VLDB Journal (VLDBJ), 2017</font> <font color="red"> (Special issue: Best Papers of VLDB 2015, invited) </font>
-						<br><i>Zuhair Khayyat, William Lucia, Meghna Singh, Mourad Ouzzani, Paolo Papotti, Jorge-Arnulfo Quiane-Ruiz, Nan Tang, and Panos Kalnis *</i>
-						</p>						
-						
-						<h2>2016</h2>
-
-						<p>
-						<b><i>Graph Stream Summarization: From Big Bang to Big Crunch </i></b> <a href="pubs/[sigmod2016]graph.stream.summarization.pdf">[pdf]</a> <a href="https://prezi.com/wj5kw9wbmr8o/tcm/">[slides]</a>
-						<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), San Francisco, USA, 2016 </font>
-						<br><i>Nan Tang, Qing Chen, and Prasenjit Mitra</i>
-						</p>	
-
-						<p>
-						<b><i>Interactive and Deterministic Data Cleaning: A Tossed Stone Raises a Thousand Ripples </i></b> <a href="pubs/falcon.pdf">[pdf]</a>  <a href="https://prezi.com/_wfuvwv9fjpx/falcon/">[slides]</a>
-						<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), San Francisco, USA, 2016 </font>
-						<br><i>Jian He, Enzo Veltri, Donatello Santoro, Guoliang Li, Giansalvatore Mecca, Paolo Papotti, and Nan Tang *</i>
-						</p>	
-
-						<p>
-						<b><i>Rheem: Enabling Multi-Platform Task Execution</i></b> <a href="pubs/rheemdemo.pdf">[pdf]</a>
-						<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD demo), San Francisco, USA, 2016 </font>
-						<br><i>Divy Agrawal, M. Lamine Ba, Laure Berti-Equille, Sanjay Chawla, Ahmed Elmagarmid, Hossam Hammady, Yasser Idris, Zoi Kaoudi, Zuhair Khayyat, Sebastian Kruse, Mourad Ouzzani, Paolo Papotti, Jorge-Arnulfo Quiane-Ruiz, Nan Tang, and Mohammed J. Zaki *</i>
-						</p>		
-						
-						<p>
-						<b><i>Road to Freedom in Big Data Analytics</i></b> <a href="pubs/[edbt2016]rheem.pdf">[pdf]</a>
-						<br><font color="blue">The 19th International Conference on Extending Database Technology (EDBT vision paper), Bordeaux, France, 2016 </font>
-						<br><i>Divy Agrawal, Sanjay Chawla, Ahmed Elmagarmid, Zoi Kaoudi, Mourad Ouzzani, Paolo Papotti, Jorge-Arnulfo Quiane-Ruiz, Nan Tang, and Mohammed J. Zaki *</i>
-						</p>				
-						
-
-						<p>
-						<b><i>Detecting Data Errors: Where are we and what needs to be done?</i></b> <a href="pubs/vldb16evaluation.pdf">[pdf]</a>
-						<br><font color="blue">The 42nd International Conference on Very Large Data Bases (VLDB), New Delhi, India, 2016 </font>
-						<br><i>	Ziawasch Abedjan, Xu Chu, Dong Deng, Raul Castro Fernandez, Ihab F. Ilyas, Mourad Ouzzani, Paolo Papotti, Michael Stonebraker, and Nan Tang *</i>
-						</p>
-
-
-						<p>
-						<b><i>Lightning Fast and Space Efficient Inequality Joins</i></b> <a href="pubs/iejoin.pdf">[pdf]</a>
-						<br><font color="blue">The 42nd International Conference on Very Large Data Bases (VLDB), New Delhi, India, 2016 </font>
-						<br><i>Zuhair Khayyat, William Lucia, Meghna Singh, Mourad Ouzzani, Paolo Papotti, Jorge-Arnulfo Quiane-Ruiz, Nan Tang, and Panos Kalnis *</i>
-						</p>
-
-						<h2>2015</h2>
-
-						<p>
-						<b><i>KATARA: Reliable Data Cleaning with Knowledge Bases and Crowdsourcing</i></b> <a href="pubs/katarademo.pdf">[pdf]</a>
-						<br><font color="blue">The 41st International Conference on Very Large Data Bases (VLDB demo), Kohala Coast, Hawai'i, 2015 </font>
-						<br><i>Xu Chu, John Morcos, Ihab F. Ilyas, Mourad Ouzzani, Paolo Papotti, Nan Tang, and Yin Ye *</i>
-						</p>
-
-						<p>
-						<b><i>KATARA: A Data Cleaning System Powered by Knowledge Bases and Crowdsourcing</i></b> <a href="pubs/katara.pdf">[pdf]</a>
-						<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), Melbourne, Australia, 2015 </font>
-						<br><i>Xu Chu, John Morcos, Ihab F. Ilyas, Mourad Ouzzani, Paolo Papotti, Nan Tang, and Yin Ye *</i>
-						</p>
-
-						<p>
-						<b><i>BigDansing: A System for Big Data Cleansing</i></b> <a href="pubs/bigdansing.pdf">[pdf]</a>
-						<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), Melbourne, Australia, 2015 </font>
-						<br><i>Zuhair Khayyat, Ihab F. Ilyas, Alekh Jindal, Sam Madden, Mourad Ouzzani, Paolo Papotti, Jorge-Arnulfo Quiane-Ruiz, Nan Tang, and Si Yin *</i>
-						</p>
-
-						<p>
-						<b><i>Proof Positive and Negative in Data Cleaning</i></b> <a href="pubs/sherlock.pdf">[pdf]</a> <a href="pubs/sherlock.slides.pdf">[slides]</a>
-						<br><font color="blue">The 31st International Conference on Data Engineering (ICDE), Seoul, Korea, 2015</font>
-						<br><i>Matteo Interlandi, and Nan Tang</i>
-						</p>
-
-						<p>
-						<b><i>Big RDF Data Cleaning</i></b> <a href="pubs/desweb2015.pdf">[pdf]</a> <a href="pubs/big.rdf.data.cleaning.pdf">[slides]</a>
-						<br><font color="blue">The 6th International Workshop on Data Engineering meets the Semantic Web (DESWeb), in conjunction with ICDE 2015, Seoul, Korea, 2015</font> <font color="red"> (invited) </font>
-						<br><i>Nan Tang</i>
-						</p>
-						
-						<h2>2014</h2>
-						<p>
-						<b><i>Big Data Cleaning</i></b> <a href="pubs/[apweb14]big.data.cleaning.pdf">[pdf]</a> <a href="pubs/[apweb14.slides]big.data.cleaning.pdf">[slides]</a>
-						<br><font color="blue">APWeb 2014.</font> <font color="red">  (invited as Distinguished Lecture Series)</font>
-						<br><i>Nan Tang</i>
-						</p>
-
-						<p>
-						<b><i>Towards Dependable Data Repairing with Fixing Rules </i></b> <a href="pubs/[sigmod2014]fixing.rules.pdf">[pdf]</a> <a href="pubs/[sigmod2014.slides]fixing.rules.pdf">[slides]</a>
-						<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), Snowbird, USA, 2014</font>
-						<br><i>Jiannan Wang, and Nan Tang</i>
-						</p>
-
-
-						<p>
-						<b><i>NADEEF/ER: Generic and Interactive Entity Resolution </i></b>  <a href="pubs/[sigmod2014.demo]nadeefer.pdf">[pdf]</a>
-						<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD demo), Snowbird, USA, 2014</font>
-						<br><i>Ahmed Elmagarmid, Ihab F. Ilyas, Mourad Ouzzani, Jorge Quiane-Ruiz, Nan Tang, and Si Yin *</i>
-						</p>
-
-						<p>
-						<b><i>Conflict Resolution with Data Currency and Consistency</i></b> <a href="pubs/"[jdiq2014]conflict.resolution.with.data.currency.and.consistency.pdf>[pdf]</a> 
-						<br><font color="blue">ACM Journal of Data and Information Quality (JDIQ) </font> <font color="red"> (invited) </font>, 2014
-						<br><i>Wenfei Fan, Floris Geerts, Nan Tang, and Wenyuan Yu *</i>
-						</p>
-
-						<p>
-						<b><i>Interaction between Record Matching and Data Repairing</i></b> <a href="pubs/[jdiq2014]interaction.pdf">[pdf]</a> 
-						<br><font color="blue">ACM Journal of Data and Information Quality (JDIQ), 2014</font>
-						<br><i>Wenfei Fan, Shuai Ma, Nan Tang, and Wenyuan Yu *</i>
-						</p>
-
-						<p>
-						<b><i>Incremental Detection of Inconsistencies in Distributed Data</i></b> <a href="pubs/tkde14.incdet.pdf">[pdf]</a> 
-						<br><font color="blue">IEEE Transaction on Knowledge and Data Engineering (TKDE): </font> <font color="red">  (Special issue: Best Papers of ICDE 2012, invited) </font>
-						<br><i>Wenfei Fan, Jianzhong Li, Nan Tang, and Wenyuan Yu *</i>
-						</p>
-
-
-						<h2>2013</h2>
-
-						<p>
-						<b><i>Data Quality Problems beyond Consistency and Deduplication  </i></b> <a href="pubs/[2013]peter.buneman.pdf">[pdf]</a>
-						<br><font color="blue">In search of elegance in the theory and practice of computation: a Festschrift in honour of Peter Buneman, Edinburgh, UK, 2013. </font> <font color="red"> (invited) </font>
-						<br><i>Wenfei Fan, Floris Geerts, Shuai Ma, Nan Tang, and Wenyuan Yu *</i>
-						</p>
-
-						<p>
-						<b><i>NADEEF: A Generalized Data Cleaning System </i></b> <a href="pubs/pvldb2013.pdf">[pdf]</a> <a href="https://github.com/Qatar-Computing-Research-Institute/NADEEF">[code]</a>
-						<br><font color="blue">The 39th International Conference on Very Large Data Bases (VLDB demo), Riva del Garda, Trento, Italy, 2013</font>
-						<br><i>Amr Ebaid, Ahmed Elmagarmid, Ihab F. Ilyas, Mourad Ouzzani, Jorge Quiane-Ruiz, Nan Tang, and Si Yin *</i>
-						</p>
-
-
-						<p>
-						<b><i>NADEEF: A Commodity Data Cleaning System </i></b> <a href="pubs/sigmod13.pdf">[pdf]</a> <a href="pubs/sigmod13.slides.pdf">[slides]</a> <a href="https://github.com/Qatar-Computing-Research-Institute/NADEEF">[code]</a> 
-						<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), New York, US, 2013</font>
-						<br><i>Michele Dallachiesa, Amr Ebaid, Ahmed Eldawy, Ahmed Elmagarmid, Ihab F. Ilyas, Mourad Ouzzani, and Nan Tang *</i>
-						</p>
-
-
-						<p>
-						<b><i>Inferring Data Currency and Consistency for Conflict Resolution </i></b> <a href="pubs/icde13.pdf">[pdf]</a> 
-						<br><font color="blue">The 29th International Conference on Data Engineering (ICDE), Brisbane, Australia, 2013</font>
-						<br><i>Wenfei Fan, Floris Geerts, Nan Tang, and Wenyuan Yu *</i>
-						</p>
-
-						<h2>2012</h2>
-
-						<p>
-						<b><i>The Data Analytics Group at the Qatar Computing Research Institute </i></b> <a href="pubs/sigmod.record.12.pdf">[pdf]</a>
-						<br><font color="blue">SIGMOD Record, volume 41(4), 2012</font> <font color="red"> (invited) </font>
-						<br><i>George Beskales, Gautam Das,  Ahmed K. Elmagarmid, Ihab F. Ilyas, Felix Naumann, Mourad Ouzzani, Paolo Papotti, Jorge Quiane-Ruiz, and Nan Tang *</i>
-						</p>
-
-						<p>
-						<b><i>Towards Certain Fixes with Editing Rules and Master Data</i></b> <a href="pubs/vldbj12.pdf">[pdf] </a> 
-						<br><font color="blue">The VLDB Journal (VLDBJ) 21(2): 213-238, 2012</font> <font color="red"> (Special issue: Best Papers of VLDB 2010, invited) </font>
-						<br><i>Wenfei Fan, Jianzhong Li, Shuai Ma, Nan Tang, and Wenyuan Yu *</i>
-						</p>
-
-						<p>
-						<b><i>Incremental Detection of Inconsistencies in Distributed Data</i></b> <a href="pubs/icde12.pdf">[pdf]</a> 
-						<br><font color="blue">The 28th International Conference on Data Engineering (ICDE), Washington DC, US, 2012</font>
-						<br><i>Wenfei Fan, Jianzhong Li, Nan Tang, and Wenyuan Yu *</i>
-						</p>
-
-						<p>
-						<b><i>Adding Regular Expressions to Graph Reachability and Pattern Queries </i></b> <a href="pubs/[fcs2012].pdf">[pdf]</a> 
-						<br><font color="blue">Frontiers of Computer Science</font> <font color="red">  (Special issues: New Topics in Database, invited) </font>
-						<br><i>Wenfei Fan, Jianzhong Li, Shuai Ma, Nan Tang, and Yinghui Wu *</i>
-						</p>
-
-						<h2>2011</h2>
-
-						<p>
-						<b><i>Interaction Between Record Matching and Data Repairing </i></b> <a href="pubs/sigmod11.pdf">[pdf]</a> 
-						<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), Athens, Greece, 2011</font>
-						<br><i>Wenfei Fan, Jianzhong Li, Shuai Ma, Nan Tang, and Wenyuan Yu *</i>
-						</p>
-
-
-						<p>
-						<b><i>CerFix: A System for Cleaning Data with Certain Fixes</i></b>  <a href="pubs/vldb11demo.pdf">[pdf]</a> 
-						<br><font color="blue">The 37th International Conference on Very Large Data Bases (VLDB Demo), Seattle, US, 2011</font>
-						<br><i>Wenfei Fan, Jianzhong Li, Shuai Ma, Nan Tang, and Wenyuan Yu *</i>
-						</p>
-
-
-						<p>
-						<b><i>Adding Regular Expressions to Graph Reachability and Pattern Queries </i></b> <a href="pubs/icde11_1.pdf">[pdf]</a>
-						<br><font color="blue">The 27th International Conference on Data Engineering (ICDE), Hannover, Germany, 2011</font>
-						<br><i>Wenfei Fan, Jianzhong Li, Shuai Ma, Nan Tang, and Yinghui Wu *</i>
-						</p>
-
-						<h2>2010</h2>
-
-						<p>
-						<b><i>Towards Certain Fixes with Editing Rules and Master Data</i></b> <a href="pubs/pvldb10a.pdf">[pdf]</a>
-						<br><font color="blue">The 36th International Conference on Very Large Data Bases (VLDB), Singapore, 2010</font> <font color="red">  (the best paper award) </font>
-						<br><i>Wenfei Fan, Jianzhong Li, Shuai Ma, Nan Tang, and Wenyuan Yu *</i>
-						</p>
-
-						<p>
-						<b><i>Graph pattern Matching: From Intractable to Polynomial Time</i></b> <a href="pubs/pvldb10b.pdf">[pdf]</a>
-						<br><font color="blue">The 36th International Conference on Very Large Data Bases (VLDB), Singapore, 2010</font>
-						<br><i>Wenfei Fan, Jianzhong Li, Shuai Ma, Nan Tang, Yinghui Wu, and Yunpeng Wu *</i>
-						</p>
-
-						<p>
-						<b><i>Projective Distribution of Full-Fledged XQuery</i></b> <a href="pubs/tkde10.pdf">[pdf]</a>
-						<br><font color="blue">IEEE Transaction on Knowledge and Data Engineering (TKDE): 22(8), 2010</font> <font color="red">  (Special issue: Best Papers of ICDE 2009 , invited) </font>
-						<br><i>Ying Zhang, Nan Tang, and Peter Boncz</i>
-						</p>
-
-						<h2>2009</h2>
-
-						<p>
-						<b><i>Space-Economical Q-Gram Index for Exact String Matching </i></b> <a href="pubs/cikm09.pdf">[pdf]</a>
-						<br><font color="blue">The 18th ACM Conference on Information and Knowledge Management (CIKM), Hong Kong, China, 2009</font>
-						<br><i>Nan Tang, Lefteris Sidirourgos, and Peter Boncz</i>
-						</p>
-
-						<p>
-						<b><i>Efficient Distribution of Full-Fledged XQuery</i></b> <a href="pubs/icde09.pdf">[pdf]</a>
-						<br><font color="blue">The 25th International Conference on Data Engineering (ICDE), Shanghai, China, 2009</font>
-						<br><i>Ying Zhang, Nan Tang, and Peter Boncz</i>
-						</p>
-
-						<p>
-						<b><i>Materialized View Selection in XML Databases</i></b>  <a href="pubs/dasfaa09.pdf">[pdf]</a>
-						<br><font color="blue">The 14th Database Systems for Advanced Applications (DASFAA), Brisbane, Australia, 2009</font>
-						<br><i>Nan Tang, Jeffrey Xu Yu, Hao Tang, M. Tamer Özsu, and Peter Boncz</i>
-						</p>
-
-
-						<h2>2008</h2>
-
-						<p>
-						<b><i>Multiple materialized view selection for XPath query rewriting </i></b> <a href="pubs/icde08.pdf">[pdf]</a>
-						<br><font color="blue">The 24th International Conference on Data Engineering (ICDE), Cancun, Mexico, 2008</font>
-						<br><i>Nan Tang, Jeffrey Xu Yu, M. Tamer Özsu, Byron Choi, and Kam-Fai Wong</i>
-						</p>
-
-
-						<p>
-						<b><i>Hierarchical indexing approaches to support XPath queries</i></b> <a href="pubs/icde08p.pdf">[pdf]</a>
-						<br><font color="blue">The 24th International Conference on Data Engineering (ICDE poster), Cancun, Mexico, 2008</font>
-						<br><i>Nan Tang, Jeffrey Xu Yu, M. Tamer Özsu, and Kam-Fai Wong</i>
-						</p>
-
-						<p>
-						<b><i>Fast XML structural join algorithms by partitioning </i></b> <a href="pubs/JPRIT.pdf">[pdf]</a>
-						<br><font color="blue">Journal of Research and Practice in Information Technology (JRPIT): 40(1), 2008</font>
-						<br><i>Nan Tang, Jeffrey Xu Yu, Kam-Fai Wong, and Jianxin Li</i>
-						</p>
-
-						<h2>2006</h2>
-
-						<p>
-						<b><i>Answering XML queries using path-based indexes: A survey</i></b> <a href="pubs/wwwj06.pdf">[pdf]</a>
-						<br><font color="blue">World Wide Web Journal (WWWJ): 9(3), 2006</font>
-						<br><i>Kam-Fai Wong, Jeffrey Xu Yu, and Nan Tang</i>
-						</p>
-
-
-						<p>
-						<b><i>Fast structural join with a location function</i></b> <a href="pubs/dasfaa06a.pdf">[pdf]</a>
-						<br><font color="blue">The 11th Database Systems for Advanced Applications (DASFAA), Singapore, 2006</font>
-						<br><i>Nan Tang, Jeffrey Xu Yu, Kam-Fai Wong, and Haifeng Jiang</i>
-						</p>
-
-						<p>
-						<b><i>Fast reachability query processing </i></b> <a href="pubs/dasfaa06b.pdf">[pdf]</a>
-						<br><font color="blue">The 11th Database Systems for Advanced Applications (DASFAA), Singapore, 2006</font>
-						<br><i>Jiefeng Cheng, Jeffrey Xu Yu, and Nan Tang</i>
-						</p>
-
-
-						<h2>2005</h2>
-
-						<p>
-						<b><i>Accelerating XML structural join by partitioning </i></b> <a href="pubs/dexa05.pdf">[pdf]</a>
-						<br><font color="blue">Database and Expert Systems Applications (DEXA), Copenhagen, Denmark, 2005</font>
-						<br><i>Nan Tang, Jeffrey Xu Yu, Kam-Fai Wong, Kevin Lu, and Jianxin Li</i>
-						</p>
-
-						<p>
-						<b><i>Win: An efficient data placement strategy for parallel XML databases</i></b> <a href="pubs/icpads05.pdf">[pdf]</a>
-						<br><font color="blue">The 16th International Conference on Parallel and Distributed System (ICPADS), Fukuoka, Japan, 2005</font>
-						<br><i>Nan Tang, Guoren Wang, Jeffrey Xu Yu, Kam-Fai Wong, and Ge Yu</i>
-						</p>
-
-
-						<h2>2004</h2>
-
-						<p>
-						<b><i>Answering XML twig queries with automata </i></b> <a href="pubs/apweb04.pdf">[pdf]</a>
-						<br><font color="blue">The 6th Asia-Pacific Web Conference (APWeb), Hangzhou, China, 2004</font>
-						<br><i>Bing Sun, Bo Zhou, Nan Tang, Guoren Wang, Ge Yu, and Fulin Jia</i>
-						</p>
-
-
-						<h2>2003</h2>
-
-						<p>
-						<b><i>A Data placement and query processing based on RPE parallelisms </i></b> <a href="pubs/compsac.pdf">[pdf]</a>
-						<br><font color="blue">The 27th International Computer Software and Applications Conference (COMPSAC), Dallas, Texas, USA, 2003</font>
-						<br><i>Yaxin Yu, Guoren Wang, Ge Yu, Gang Wu, Junan Hu, and Nan Tang</i>
-						</p>
-
-						<h2>Patents</h2>
-
-						<p>
-							<b><i>Dependable Data Repairing with Fixing Rules.</i></b> <font color="blue">Qatar Computing Research Institute, HBKU</font> (PCT/EP2013/052476).
-							<br><b><i>Towards dependable Data Repairing with Fixing Rules.</i></b> <font color="blue">Qatar Computing Research Institute, HBKU</font> (PCT/EP2014/052494).
-							<br><b><i>KATARA: A Data Cleaning System Powered by Knowledge Bases and Crowdsourcing. </i></b> <font color="blue">Qatar Computing Research Institute, HBKU</font> (PCT/GB2014/051670).			
-							<br><b><i>NADEEF: A holistic and extensible data cleaning platform. </i></b> <font color="blue">Qatar Computing Research Institute, HBKU</font> (PCT/EP2012/062446).		
-							<br><b><i>Generalized Data Cleaning using SAT-Solvers. </i></b> <font color="blue">Qatar Computing Research Institute, HBKU</font> (PCT/EP2012/062445).																		
-						</p>
-					</article>
+							</nav>
+						</header>
+					</div>
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div class="container">
+						<div id="content">
+							<article>
+									<h3>The symbol “*” means that the senior authors are listed in alphabetical order</h3>
+
+			<!-- 
+									<h3>arXiv</h3>	
+									<p>
+									<b><i>Deductive Optimization of Relational Data Storage</i></b> <a href="https://arxiv.org/abs/1903.03229">[link]</a>					
+									<br><i>John K. Feser, Samuel Madden, Nan Tang, and Armando Solar-Lezama </i>
+									</p>	
+
+									<p>
+									<b><i>Data Curation with Deep Learning [Vision]</i></b> <a href="https://arxiv.org/abs/1803.01384">[link]</a>					
+									<br><i>Saravanan Thirumuruganathan, Nan Tang, Mourad Ouzzani, and AnHai Doan </i>
+									</p>	
+
+									<p>
+									<b><i>Reuse and Adaptation for Entity Resolution through Transfer Learning</i></b> <a href="http://arxiv.org/abs/1809.11084">[link]</a>					
+									<br><i>Saravanan Thirumuruganathan, Shameem A Puthiya Parambath, Mourad Ouzzani, Nan Tang, and Shafiq Joty </i>
+									</p>
+			 -->
+			 
+									<h2>2020</h2>	
+									<p>
+									<b><i>Dagger: A Data (not code) Debugger</i></b> <a href="pubs/cidr20dagger.pdf">[pdf]</a>
+									<br><font color="blue">The Conference on Innovative Data Systems Research (CIDR), Amsterdam, Netherlands, 2020 </font>
+									<br><i>El Kindi Rezig, Lei Cao, Giovanni Simonini, Maxime Schoemans, Samuel Madden, Mourad Ouzzani, Nan Tang, and Michael Stonebraker</i>
+									</p>	
+
+
+									<p>
+									<b><i>Interactive Cleaning for Progressive Visualization through Composite Questions</i></b>  <a href="pubs/icde20vis.pdf">[pdf]</a>
+									<br><font color="blue">The 36th IEEE International Conference on Data Engineering (ICDE), Dallas, Texas, USA, 2020 </font>
+									<br><i>Yuyu Luo, Chengliang Chai, Xuedi Qin, Nan Tang, and Guoliang Li</i>
+									</p>	
+
+									<p>
+									<b><i>Reinforcement Learning with Tree-LSTM for Join Order Selection</i></b> <a href="pubs/cidr20jos.pdf">[pdf]</a>
+									<br><font color="blue">The 36th IEEE International Conference on Data Engineering (ICDE), Dallas, Texas, USA, 2020 </font>
+									<br><i>Xiang Yu, Guoliang Li, Chengliang Chai, and Nan Tang</i>
+									</p>	
+
+									<p>
+									<b><i>Making Data Visualization More Efficient and Effective: A Survey</i></b> <a href="pubs/vldbjvissurvey.pdf">[pdf]</a>
+									<br><font color="blue">The VLDB Journal (VLDBJ), to appear </font>
+									<br><i>Xuedi Qin, Yuyu Luo, Nan Tang, and Guoliang Li</i>
+									</p>	
+
+
+									<p>
+									<b><i>Efficient Algorithms for Approximate Single-Source Personalized PageRank Queries</i></b> <a href="https://arxiv.org/abs/1908.10583">[pdf]</a>
+									<br><font color="blue">ACM Transactions on Database Systems (TODS), to appear </font>
+									<br><i>Sibo Wang, Renchi Yang, Runhui Wang, Xiaokui Xiao, Zhewei Wei, Wenqing Lin, Yin Yang and Nan Tang</i>
+									</p>	
+
+
+									<h2>2019</h2>	
+									<p>
+									<b><i>Data Civilizer 2.0: A Holistic Framework for Data Preparation and Analytics</i></b> <a href="pubs/vldb2019demo.pdf">[pdf]</a>
+									<br><font color="blue">The 45th International Conference on Very Large Data Bases (VLDB demo), Los Angeles, California, 2019 </font>
+									<br><i>El Kindi Rezig, Lei Cao, Michael Stonebraker, Giovanni Simonin, Wenbo Tao, Samuel Madden, Mourad Ouzzani, Nan Tang, and Ahmed K. Elmagarmid</i>
+									</p>	
+
+									<p>
+									<b><i>Querying Shortest Paths on Time Dependent Road Networks</i></b> <a href="pubs/vldb2019.pdf">[pdf]</a>
+									<br><font color="blue">The 45th International Conference on Very Large Data Bases (VLDB), Los Angeles, California, 2019 </font>
+									<br><i>Yong Wang, Guoliang Li, and Nan Tang</i>
+									</p>	
+
+
+									<p>
+									<b><i>Raha: A Configuration-Free Error Detection System</i></b> <a href="pubs/raha.pdf">[pdf]</a>
+									<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), Amsterdam, The Netherlands, 2019 </font>
+									<br><i>Mohammad Mahdavi, Ziawasch Abedjan, Raul Castro Fernandez, Samuel Madden, Mourad Ouzzani, Michael Stonebraker, and Nan Tang * </i>
+									</p>	
+
+									<p>
+									<b><i>ANMAT: Automatic Knowledge Discovery and Error Detection through Pattern Functional Dependencies</i></b> <a href="pubs/[sigmod2019demo]pfds.pdf">[pdf]</a>
+									<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD Demo), Amsterdam, The Netherlands, 2019 </font>
+									<br><i>Abdulhakim Qahtan, Nan Tang, Mourad Ouzzani, Yang Cao, Michael Stonebraker</i>
+									</p>	
+
+									<p>
+									<b><i>Towards Democratizing Relational Data Visualization [Tutorial]</i></b> 
+									<a href="pubs/sigmod2019tutorial.pdf">[pdf]</a> 
+									<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD Tutorial), Amsterdam, The Netherlands, 2019 </font>
+									<br><i>Nan Tang, Eugene Wu and Guoliang Li</i>
+									<br> <b>Presentations:</b> Introduction, 30 mins <a href="pubs/nan.part1.key">[keynote]</a>; 
+									Efficient data visualization, 1 hour <a href="pubs/wu.pptx">[ppt]</a>; 
+									Smart data visualization, 1 hour <a href="pubs/guoliang.key">[keynote]</a>; 
+									Uncertainty, collaborative and immersive data visualization, 30 mins <a href="pubs/nan.part4.key">[keynote]</a>
+									</p>									
+
+									<p>
+									<b><i>Explaining Entity Resolution Predictions : Where are we and What needs to be done?</i></b> <a href="pubs/hilda2019.pdf">[pdf]</a>
+									<br><font color="blue">Workshop on Human-In-the-Loop Data Analytics (HILDA, Co-located with SIGMOD 2019), Amsterdam, The Netherlands, 2019 </font>
+									<br><i>Saravanan Thirumuruganathan, Mourad Ouzzani, and Nan Tang</i>
+									</p>									
+
+
+									<p>
+									<b><i>Data Civilizer: End-to-End Support for Data Discovery, Integration, And Cleaning [Book Chapter]</i></b> <a href="http://www.morganclaypoolpublishers.com/stonebraker/">[link]</a> 
+									<br><font color="blue">Making Databases Work: The Pragmatic Wisdom of Michael Stonebraker </font>
+									<br><i>Mourad Ouzzani, Nan Tang, and Raul Castro Fernandez</i>
+									</p>									
+
+									<p>
+									<b><i>Unsupervised String Transformation Learning for Entity Consolidation </i></b> <a href="pubs/icde2019.pdf">[pdf]</a> 
+									<br><font color="blue">The 35th IEEE International Conference on Data Engineering (ICDE), Macau SAR, China, 2019 </font>
+									<br><i>Dong Deng, Wenbo Tao, Ziawasch Abedjan, Ahmed Elmagarmid, Ihab F. Ilyas, Guoliang Li, Samuel Madden, Mourad Ouzzani, Michael Stonebraker, and Nan Tang * </i>
+									</p>
+									
+									<h2>2018</h2>
+									<p>
+									<b><i>Distilling Relations using Knowledge Bases</i></b> <a href="pubs/vldbj2018.pdf">[pdf]</a> 
+									<br><font color="blue">The VLDB Journal (VLDBJ), 2018</font>
+									<br><i>Shuang Hao, Nan Tang, Guoliang Li, Jian Li, and Jianhua Feng</i>
+									</p>
+
+									<p>
+									<b><i>FAHES: A Robust Disguised Missing Values Detector</i></b> <a href="pubs/kdd18.pdf">[pdf]</a>
+									<br><font color="blue">The 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (SIGKDD 2018), Long Presentation, Research Track, London, UK, 2018 </font>
+									<br><i>Abdulhakim A. Qahtan, Ahmed Elmagarmid, Raul Castro Fernandez, Mourad Ouzzani, and Nan Tang *</i>
+									</p>
+															
+									<p>
+									<b><i>Distributed Representations of Tuples for Entity Resolution </i></b> <a href="pubs/vldb18-deeper.pdf">[pdf]</a>
+									<br><font color="blue">The 44th International Conference on Very Large Data Bases (VLDB), Rio de Janeiro, Brazil, 2018 </font>
+									<br><i>Muhammad Ebraheem, Saravanan Thirumuruganathan, Shafiq Joty, Mourad Ouzzani, and Nan Tang *</i>
+									</p>
+
+									<p>
+									<b><i>Synthesizing Entity Matching Rules by Examples</i></b> <a href="pubs/synthesizer.pdf">[pdf]</a>
+									<br><font color="blue">The 44th International Conference on Very Large Data Bases (VLDB), Rio de Janeiro, Brazil, 2018 </font>
+									<br><i>Rohit Singh, Vamsi Meduri, Ahmed Elmagarmid, Samuel Madden, Paolo Papotti, Jorge-Arnulfo Quiané-Ruiz, Armando Solar-Lezama and Nan Tang *</i>
+									</p>
+
+									<p>
+									<b><i>RHEEM: A Cross-Platform Data Processing System</i></b> <a href="pubs/vldb18-rheem.pdf">[pdf]</a>
+									<br><font color="blue">The 44th International Conference on Very Large Data Bases (VLDB), Rio de Janeiro, Brazil, 2018 </font>
+									<br><i>Divy Agrawal, Sanjay Chawla1, Bertty Contreras, Ahmed Elmagarmid,1 Yasser Idris, Zoi Kaoudi, Sebastian Kruse, Ji Lucas, Essam Mansour, Mourad Ouzzani, Paolo Papotti, Jorge-Arnulfo Quiané-Ruiz, Nan Tang, Saravanan Thirumuruganathan, and Anis Troudi *</i>
+									</p>
+
+									<p>
+									<b><i>DeepEye: Creating Good Data Visualizations by Keyword Search</i></b> <a href="pubs/deepeyesigmod2018demo.pdf">[pdf]</a>
+									<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD demo), Houston, USA, 2018 </font>
+									<br><i>Yuyu Luo, Xuedi Qin, Nan Tang, Guoliang Li and Xinran Wang</i>
+									</p>
+
+									<p>
+									<b><i>DeepEye: Visualizing Your Data by Keyword Search</i></b> <a href="pubs/edbt2018.pdf">[pdf]</a>
+									<br><font color="blue">The 21st International Conference on Extending Database Technology (EDBT vision paper), Austria, Vienna, 2018 </font>
+									<br><i>Xuedi Qin, Yuyu Luo, Nan Tang, and Guoliang Li</i>
+									</p>
+
+									<p>
+									<b><i>DeepEye: Towards Automatic Data Visualization</i></b> <a href="pubs/icde2018deepeye.pdf">[pdf]</a>
+									<br><font color="blue">The 34th IEEE International Conference on Data Engineering (ICDE), Paris, France, 2018 </font>
+									<br><i>Yuyu Luo, Xuedi Qin, Nan Tang, and Guoliang Li</i>
+									</p>
+
+									<p>
+									<b><i>Seeping Semantics: Linking Datasets using Word Embeddings for Data Discovery</i></b> <a href="pubs/icde2018semantic.pdf">[pdf]</a>
+									<br><font color="blue">The 34th IEEE International Conference on Data Engineering (ICDE), Paris, France, 2018</font>
+									<br><i>Raul Castro Fernandez, Essam Mansour, Abdulhakim Qahtan, Ahmed Elmagarmid, Ihab F. Ilyas, Samuel Madden, Mourad Ouzzani, Michael Stonebraker and Nan Tang *</i>
+									</p>
+
+									<p>
+									<b><i>Discovering Mis-Categorized Entities</i></b> <a href="pubs/icde2018miscategorized.pdf">[pdf]</a>
+									<br><font color="blue">The 34th IEEE International Conference on Data Engineering (ICDE), Paris, France, 2018</font>
+									<br><i>Shuang Hao, Nan Tang, Guoliang Li and Jianhua Feng</i>
+									</p>
+
+									<p>
+									<b><i>Cleaning Your Wrong Google Scholar Entries</i></b> <a href="pubs/icde2018demo.cleaning.google.scholar.pdf">[pdf]</a>
+									<br><font color="blue">The 34th IEEE International Conference on Data Engineering (ICDE demo), Paris, France, 2018</font>
+									<br><i>Shuang Hao, Yi Xu, Nan Tang, Guoliang Li and Jianhua Feng</i>
+									</p>
+
+									<p>
+									<b><i>FAHES: Detecting Disguised Missing Values</i></b> <a href="pubs/icde2018demofahes.pdf">[pdf]</a>
+									<br><font color="blue">The 34th IEEE International Conference on Data Engineering (ICDE demo), Paris, France, 2018</font>
+									<br><i>Abdulhakim A. Qahtan, Ahmed Elmagarmid, Mourad Ouzzani, and Nan Tang *</i>
+									</p>		
+
+									<p>
+									<b><i>Building Data Civilizer Pipelines with an Advanced Workflow Engine</i></b> <a href="pubs/icde2018demo.civilizer.pdf">[pdf]</a>
+									<br><font color="blue">The 34th IEEE International Conference on Data Engineering (ICDE demo), Paris, France, 2018</font>
+									<br><i>Essam Mansour, Dong Deng, Raul Castro Fernandez, Abdulhakim Qahtan, Wenbo Tao, Ziawasch Abedjan, Ahmed Elmagarmid, Ihab F. Ilyas, Samuel Madden, Mourad Ouzzani, Michael Stonebraker and Nan Tang *</i>
+									</p>		
+
+									<h2>2017</h2>
+									<p>
+									<b><i>UGuide – User-Guided Discovery of FD-Detectable Errors</i></b> <a href="pubs/sigmod2017.pdf">[pdf]</a>
+									<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), Chicago, USA, 2017 </font>
+									<br><i>Saravanan Thirumuruganathan, Laure Berti-Equille, Mourad Ouzzani, Jorge-Arnulfo Quiane-Ruiz and Nan Tang *</i>
+									</p>	
+
+									<p>
+									<b><i>A Demo of the Data Civilizer System</i></b> <a href="pubs/sigdm1.pdf">[pdf]</a>
+									<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD demo), Chicago, USA, 2017 </font>
+									<br><i>Raul Castro Fernandez, Dong Deng, Essam Mansour, Abdulhakim Qahtan, Wenbo Tao, Ziawasch Abedjan, Ahmed Elmagarmid, Ihab F. Ilyas, Samuel Madden, Mourad Ouzzani, Michael Stonebraker and Nan Tang *</i>
+									</p>	
+
+									<p>
+									<b><i>Generating Concise Entity Matching Rules</i></b> <a href="pubs/sigdm2.pdf">[pdf]</a>
+									<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD demo), Chicago, USA, 2017 </font>
+									<br><i>Rohit Singh, Vamsi Meduri, Ahmed Elmagarmid, Samuel Madden, Paolo Papotti, Jorge-Arnulfo Quiané-Ruiz, Armando Solar-Lezama and Nan Tang *</i>
+									</p>	
+								
+									<p>						
+									<b><i>Cleaning Relations using Knowledge Bases</i></b> <a href="pubs/icde2017.pdf">[pdf]</a>
+									<br><font color="blue">The 33st International Conference on Data Engineering (ICDE), San Diego, California, USA, 2017</font>
+									<br><i>Shuang Hao, Nan Tang, Guoliang Li and Jian Li</i>
+									</p>
+
+									<p>
+									<b><i>Dependable Data Repairing with Fixing Rules</i></b> <a href="">[pdf]</a> 
+									<br><font color="blue">ACM Journal of Data and Information Quality (JDIQ), 2017</font>
+									<br><i>Jiannan Wang, and Nan Tang</i>
+									</p>
+
+									<p>
+									<b><i>A Novel Cost-Based Model for Data Repairing</i></b> <a href="pubs/tkde2017.pdf">[pdf]</a>
+									<br><font color="blue">IEEE Transaction on Knowledge and Data Engineering (TKDE), 2017</font> 
+									<br><i>Shuang Hao, Nan Tang, Guoliang Li, Jian He, Na Ta, and Jianhua Feng</i>
+									</p>
+
+
+									<p>
+									<b><i>A Novel Cost-Based Model for Data Repairing (Extended Abstract)</i></b> <a href="pubs/icde2017tkdeposters.pdf">[pdf]</a>
+									<br><font color="blue">The 33st International Conference on Data Engineering (ICDE/TKDE posters), San Diego, California, USA, 2017</font> 
+									<br><i>Shuang Hao, Nan Tang, Guoliang Li, Jian He, Na Ta, and Jianhua Feng</i>
+									</p>
+
+									<p>						
+									<b><i>The Data Civilizer System</i></b> <a href="pubs/cidr2017.pdf">[pdf]</a>
+									<br><font color="blue">The biennial Conference on Innovative Data Systems Research (CIDR), Chaminade, California, USA, 2017</font> 
+									<br><i>Dong Deng, Raul Castro Fernandez, Ziawasch Abedjan, Sibo Wang, Michael Stonebraker, Ahmed Elmagarmid, Ihab F. Ilyas, Samuel Madden, Mourad Ouzzani and Nan Tang *</i>
+									</p>
+
+									<p>						
+									<b><i>Fast and Scalable Inequality Joins</i></b> <a href="pubs/vldbj2016.pdf">[pdf]</a>
+									<br><font color="blue">The VLDB Journal (VLDBJ), 2017</font> <font color="red"> (Special issue: Best Papers of VLDB 2015, invited) </font>
+									<br><i>Zuhair Khayyat, William Lucia, Meghna Singh, Mourad Ouzzani, Paolo Papotti, Jorge-Arnulfo Quiane-Ruiz, Nan Tang, and Panos Kalnis *</i>
+									</p>						
+									
+									<h2>2016</h2>
+
+									<p>
+									<b><i>Graph Stream Summarization: From Big Bang to Big Crunch </i></b> <a href="pubs/[sigmod2016]graph.stream.summarization.pdf">[pdf]</a> <a href="https://prezi.com/wj5kw9wbmr8o/tcm/">[slides]</a>
+									<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), San Francisco, USA, 2016 </font>
+									<br><i>Nan Tang, Qing Chen, and Prasenjit Mitra</i>
+									</p>	
+
+									<p>
+									<b><i>Interactive and Deterministic Data Cleaning: A Tossed Stone Raises a Thousand Ripples </i></b> <a href="pubs/falcon.pdf">[pdf]</a>  <a href="https://prezi.com/_wfuvwv9fjpx/falcon/">[slides]</a>
+									<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), San Francisco, USA, 2016 </font>
+									<br><i>Jian He, Enzo Veltri, Donatello Santoro, Guoliang Li, Giansalvatore Mecca, Paolo Papotti, and Nan Tang *</i>
+									</p>	
+
+									<p>
+									<b><i>Rheem: Enabling Multi-Platform Task Execution</i></b> <a href="pubs/rheemdemo.pdf">[pdf]</a>
+									<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD demo), San Francisco, USA, 2016 </font>
+									<br><i>Divy Agrawal, M. Lamine Ba, Laure Berti-Equille, Sanjay Chawla, Ahmed Elmagarmid, Hossam Hammady, Yasser Idris, Zoi Kaoudi, Zuhair Khayyat, Sebastian Kruse, Mourad Ouzzani, Paolo Papotti, Jorge-Arnulfo Quiane-Ruiz, Nan Tang, and Mohammed J. Zaki *</i>
+									</p>		
+									
+									<p>
+									<b><i>Road to Freedom in Big Data Analytics</i></b> <a href="pubs/[edbt2016]rheem.pdf">[pdf]</a>
+									<br><font color="blue">The 19th International Conference on Extending Database Technology (EDBT vision paper), Bordeaux, France, 2016 </font>
+									<br><i>Divy Agrawal, Sanjay Chawla, Ahmed Elmagarmid, Zoi Kaoudi, Mourad Ouzzani, Paolo Papotti, Jorge-Arnulfo Quiane-Ruiz, Nan Tang, and Mohammed J. Zaki *</i>
+									</p>				
+									
+
+									<p>
+									<b><i>Detecting Data Errors: Where are we and what needs to be done?</i></b> <a href="pubs/vldb16evaluation.pdf">[pdf]</a>
+									<br><font color="blue">The 42nd International Conference on Very Large Data Bases (VLDB), New Delhi, India, 2016 </font>
+									<br><i>	Ziawasch Abedjan, Xu Chu, Dong Deng, Raul Castro Fernandez, Ihab F. Ilyas, Mourad Ouzzani, Paolo Papotti, Michael Stonebraker, and Nan Tang *</i>
+									</p>
+
+
+									<p>
+									<b><i>Lightning Fast and Space Efficient Inequality Joins</i></b> <a href="pubs/iejoin.pdf">[pdf]</a>
+									<br><font color="blue">The 42nd International Conference on Very Large Data Bases (VLDB), New Delhi, India, 2016 </font>
+									<br><i>Zuhair Khayyat, William Lucia, Meghna Singh, Mourad Ouzzani, Paolo Papotti, Jorge-Arnulfo Quiane-Ruiz, Nan Tang, and Panos Kalnis *</i>
+									</p>
+
+									<h2>2015</h2>
+
+									<p>
+									<b><i>KATARA: Reliable Data Cleaning with Knowledge Bases and Crowdsourcing</i></b> <a href="pubs/katarademo.pdf">[pdf]</a>
+									<br><font color="blue">The 41st International Conference on Very Large Data Bases (VLDB demo), Kohala Coast, Hawai'i, 2015 </font>
+									<br><i>Xu Chu, John Morcos, Ihab F. Ilyas, Mourad Ouzzani, Paolo Papotti, Nan Tang, and Yin Ye *</i>
+									</p>
+
+									<p>
+									<b><i>KATARA: A Data Cleaning System Powered by Knowledge Bases and Crowdsourcing</i></b> <a href="pubs/katara.pdf">[pdf]</a>
+									<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), Melbourne, Australia, 2015 </font>
+									<br><i>Xu Chu, John Morcos, Ihab F. Ilyas, Mourad Ouzzani, Paolo Papotti, Nan Tang, and Yin Ye *</i>
+									</p>
+
+									<p>
+									<b><i>BigDansing: A System for Big Data Cleansing</i></b> <a href="pubs/bigdansing.pdf">[pdf]</a>
+									<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), Melbourne, Australia, 2015 </font>
+									<br><i>Zuhair Khayyat, Ihab F. Ilyas, Alekh Jindal, Sam Madden, Mourad Ouzzani, Paolo Papotti, Jorge-Arnulfo Quiane-Ruiz, Nan Tang, and Si Yin *</i>
+									</p>
+
+									<p>
+									<b><i>Proof Positive and Negative in Data Cleaning</i></b> <a href="pubs/sherlock.pdf">[pdf]</a> <a href="pubs/sherlock.slides.pdf">[slides]</a>
+									<br><font color="blue">The 31st International Conference on Data Engineering (ICDE), Seoul, Korea, 2015</font>
+									<br><i>Matteo Interlandi, and Nan Tang</i>
+									</p>
+
+									<p>
+									<b><i>Big RDF Data Cleaning</i></b> <a href="pubs/desweb2015.pdf">[pdf]</a> <a href="pubs/big.rdf.data.cleaning.pdf">[slides]</a>
+									<br><font color="blue">The 6th International Workshop on Data Engineering meets the Semantic Web (DESWeb), in conjunction with ICDE 2015, Seoul, Korea, 2015</font> <font color="red"> (invited) </font>
+									<br><i>Nan Tang</i>
+									</p>
+									
+									<h2>2014</h2>
+									<p>
+									<b><i>Big Data Cleaning</i></b> <a href="pubs/[apweb14]big.data.cleaning.pdf">[pdf]</a> <a href="pubs/[apweb14.slides]big.data.cleaning.pdf">[slides]</a>
+									<br><font color="blue">APWeb 2014.</font> <font color="red">  (invited as Distinguished Lecture Series)</font>
+									<br><i>Nan Tang</i>
+									</p>
+
+									<p>
+									<b><i>Towards Dependable Data Repairing with Fixing Rules </i></b> <a href="pubs/[sigmod2014]fixing.rules.pdf">[pdf]</a> <a href="pubs/[sigmod2014.slides]fixing.rules.pdf">[slides]</a>
+									<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), Snowbird, USA, 2014</font>
+									<br><i>Jiannan Wang, and Nan Tang</i>
+									</p>
+
+
+									<p>
+									<b><i>NADEEF/ER: Generic and Interactive Entity Resolution </i></b>  <a href="pubs/[sigmod2014.demo]nadeefer.pdf">[pdf]</a>
+									<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD demo), Snowbird, USA, 2014</font>
+									<br><i>Ahmed Elmagarmid, Ihab F. Ilyas, Mourad Ouzzani, Jorge Quiane-Ruiz, Nan Tang, and Si Yin *</i>
+									</p>
+
+									<p>
+									<b><i>Conflict Resolution with Data Currency and Consistency</i></b> <a href="pubs/"[jdiq2014]conflict.resolution.with.data.currency.and.consistency.pdf>[pdf]</a> 
+									<br><font color="blue">ACM Journal of Data and Information Quality (JDIQ) </font> <font color="red"> (invited) </font>, 2014
+									<br><i>Wenfei Fan, Floris Geerts, Nan Tang, and Wenyuan Yu *</i>
+									</p>
+
+									<p>
+									<b><i>Interaction between Record Matching and Data Repairing</i></b> <a href="pubs/[jdiq2014]interaction.pdf">[pdf]</a> 
+									<br><font color="blue">ACM Journal of Data and Information Quality (JDIQ), 2014</font>
+									<br><i>Wenfei Fan, Shuai Ma, Nan Tang, and Wenyuan Yu *</i>
+									</p>
+
+									<p>
+									<b><i>Incremental Detection of Inconsistencies in Distributed Data</i></b> <a href="pubs/tkde14.incdet.pdf">[pdf]</a> 
+									<br><font color="blue">IEEE Transaction on Knowledge and Data Engineering (TKDE): </font> <font color="red">  (Special issue: Best Papers of ICDE 2012, invited) </font>
+									<br><i>Wenfei Fan, Jianzhong Li, Nan Tang, and Wenyuan Yu *</i>
+									</p>
+
+
+									<h2>2013</h2>
+
+									<p>
+									<b><i>Data Quality Problems beyond Consistency and Deduplication  </i></b> <a href="pubs/[2013]peter.buneman.pdf">[pdf]</a>
+									<br><font color="blue">In search of elegance in the theory and practice of computation: a Festschrift in honour of Peter Buneman, Edinburgh, UK, 2013. </font> <font color="red"> (invited) </font>
+									<br><i>Wenfei Fan, Floris Geerts, Shuai Ma, Nan Tang, and Wenyuan Yu *</i>
+									</p>
+
+									<p>
+									<b><i>NADEEF: A Generalized Data Cleaning System </i></b> <a href="pubs/pvldb2013.pdf">[pdf]</a> <a href="https://github.com/Qatar-Computing-Research-Institute/NADEEF">[code]</a>
+									<br><font color="blue">The 39th International Conference on Very Large Data Bases (VLDB demo), Riva del Garda, Trento, Italy, 2013</font>
+									<br><i>Amr Ebaid, Ahmed Elmagarmid, Ihab F. Ilyas, Mourad Ouzzani, Jorge Quiane-Ruiz, Nan Tang, and Si Yin *</i>
+									</p>
+
+
+									<p>
+									<b><i>NADEEF: A Commodity Data Cleaning System </i></b> <a href="pubs/sigmod13.pdf">[pdf]</a> <a href="pubs/sigmod13.slides.pdf">[slides]</a> <a href="https://github.com/Qatar-Computing-Research-Institute/NADEEF">[code]</a> 
+									<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), New York, US, 2013</font>
+									<br><i>Michele Dallachiesa, Amr Ebaid, Ahmed Eldawy, Ahmed Elmagarmid, Ihab F. Ilyas, Mourad Ouzzani, and Nan Tang *</i>
+									</p>
+
+
+									<p>
+									<b><i>Inferring Data Currency and Consistency for Conflict Resolution </i></b> <a href="pubs/icde13.pdf">[pdf]</a> 
+									<br><font color="blue">The 29th International Conference on Data Engineering (ICDE), Brisbane, Australia, 2013</font>
+									<br><i>Wenfei Fan, Floris Geerts, Nan Tang, and Wenyuan Yu *</i>
+									</p>
+
+									<h2>2012</h2>
+
+									<p>
+									<b><i>The Data Analytics Group at the Qatar Computing Research Institute </i></b> <a href="pubs/sigmod.record.12.pdf">[pdf]</a>
+									<br><font color="blue">SIGMOD Record, volume 41(4), 2012</font> <font color="red"> (invited) </font>
+									<br><i>George Beskales, Gautam Das,  Ahmed K. Elmagarmid, Ihab F. Ilyas, Felix Naumann, Mourad Ouzzani, Paolo Papotti, Jorge Quiane-Ruiz, and Nan Tang *</i>
+									</p>
+
+									<p>
+									<b><i>Towards Certain Fixes with Editing Rules and Master Data</i></b> <a href="pubs/vldbj12.pdf">[pdf] </a> 
+									<br><font color="blue">The VLDB Journal (VLDBJ) 21(2): 213-238, 2012</font> <font color="red"> (Special issue: Best Papers of VLDB 2010, invited) </font>
+									<br><i>Wenfei Fan, Jianzhong Li, Shuai Ma, Nan Tang, and Wenyuan Yu *</i>
+									</p>
+
+									<p>
+									<b><i>Incremental Detection of Inconsistencies in Distributed Data</i></b> <a href="pubs/icde12.pdf">[pdf]</a> 
+									<br><font color="blue">The 28th International Conference on Data Engineering (ICDE), Washington DC, US, 2012</font>
+									<br><i>Wenfei Fan, Jianzhong Li, Nan Tang, and Wenyuan Yu *</i>
+									</p>
+
+									<p>
+									<b><i>Adding Regular Expressions to Graph Reachability and Pattern Queries </i></b> <a href="pubs/[fcs2012].pdf">[pdf]</a> 
+									<br><font color="blue">Frontiers of Computer Science</font> <font color="red">  (Special issues: New Topics in Database, invited) </font>
+									<br><i>Wenfei Fan, Jianzhong Li, Shuai Ma, Nan Tang, and Yinghui Wu *</i>
+									</p>
+
+									<h2>2011</h2>
+
+									<p>
+									<b><i>Interaction Between Record Matching and Data Repairing </i></b> <a href="pubs/sigmod11.pdf">[pdf]</a> 
+									<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), Athens, Greece, 2011</font>
+									<br><i>Wenfei Fan, Jianzhong Li, Shuai Ma, Nan Tang, and Wenyuan Yu *</i>
+									</p>
+
+
+									<p>
+									<b><i>CerFix: A System for Cleaning Data with Certain Fixes</i></b>  <a href="pubs/vldb11demo.pdf">[pdf]</a> 
+									<br><font color="blue">The 37th International Conference on Very Large Data Bases (VLDB Demo), Seattle, US, 2011</font>
+									<br><i>Wenfei Fan, Jianzhong Li, Shuai Ma, Nan Tang, and Wenyuan Yu *</i>
+									</p>
+
+
+									<p>
+									<b><i>Adding Regular Expressions to Graph Reachability and Pattern Queries </i></b> <a href="pubs/icde11_1.pdf">[pdf]</a>
+									<br><font color="blue">The 27th International Conference on Data Engineering (ICDE), Hannover, Germany, 2011</font>
+									<br><i>Wenfei Fan, Jianzhong Li, Shuai Ma, Nan Tang, and Yinghui Wu *</i>
+									</p>
+
+									<h2>2010</h2>
+
+									<p>
+									<b><i>Towards Certain Fixes with Editing Rules and Master Data</i></b> <a href="pubs/pvldb10a.pdf">[pdf]</a>
+									<br><font color="blue">The 36th International Conference on Very Large Data Bases (VLDB), Singapore, 2010</font> <font color="red">  (the best paper award) </font>
+									<br><i>Wenfei Fan, Jianzhong Li, Shuai Ma, Nan Tang, and Wenyuan Yu *</i>
+									</p>
+
+									<p>
+									<b><i>Graph pattern Matching: From Intractable to Polynomial Time</i></b> <a href="pubs/pvldb10b.pdf">[pdf]</a>
+									<br><font color="blue">The 36th International Conference on Very Large Data Bases (VLDB), Singapore, 2010</font>
+									<br><i>Wenfei Fan, Jianzhong Li, Shuai Ma, Nan Tang, Yinghui Wu, and Yunpeng Wu *</i>
+									</p>
+
+									<p>
+									<b><i>Projective Distribution of Full-Fledged XQuery</i></b> <a href="pubs/tkde10.pdf">[pdf]</a>
+									<br><font color="blue">IEEE Transaction on Knowledge and Data Engineering (TKDE): 22(8), 2010</font> <font color="red">  (Special issue: Best Papers of ICDE 2009 , invited) </font>
+									<br><i>Ying Zhang, Nan Tang, and Peter Boncz</i>
+									</p>
+
+									<h2>2009</h2>
+
+									<p>
+									<b><i>Space-Economical Q-Gram Index for Exact String Matching </i></b> <a href="pubs/cikm09.pdf">[pdf]</a>
+									<br><font color="blue">The 18th ACM Conference on Information and Knowledge Management (CIKM), Hong Kong, China, 2009</font>
+									<br><i>Nan Tang, Lefteris Sidirourgos, and Peter Boncz</i>
+									</p>
+
+									<p>
+									<b><i>Efficient Distribution of Full-Fledged XQuery</i></b> <a href="pubs/icde09.pdf">[pdf]</a>
+									<br><font color="blue">The 25th International Conference on Data Engineering (ICDE), Shanghai, China, 2009</font>
+									<br><i>Ying Zhang, Nan Tang, and Peter Boncz</i>
+									</p>
+
+									<p>
+									<b><i>Materialized View Selection in XML Databases</i></b>  <a href="pubs/dasfaa09.pdf">[pdf]</a>
+									<br><font color="blue">The 14th Database Systems for Advanced Applications (DASFAA), Brisbane, Australia, 2009</font>
+									<br><i>Nan Tang, Jeffrey Xu Yu, Hao Tang, M. Tamer Özsu, and Peter Boncz</i>
+									</p>
+
+
+									<h2>2008</h2>
+
+									<p>
+									<b><i>Multiple materialized view selection for XPath query rewriting </i></b> <a href="pubs/icde08.pdf">[pdf]</a>
+									<br><font color="blue">The 24th International Conference on Data Engineering (ICDE), Cancun, Mexico, 2008</font>
+									<br><i>Nan Tang, Jeffrey Xu Yu, M. Tamer Özsu, Byron Choi, and Kam-Fai Wong</i>
+									</p>
+
+
+									<p>
+									<b><i>Hierarchical indexing approaches to support XPath queries</i></b> <a href="pubs/icde08p.pdf">[pdf]</a>
+									<br><font color="blue">The 24th International Conference on Data Engineering (ICDE poster), Cancun, Mexico, 2008</font>
+									<br><i>Nan Tang, Jeffrey Xu Yu, M. Tamer Özsu, and Kam-Fai Wong</i>
+									</p>
+
+									<p>
+									<b><i>Fast XML structural join algorithms by partitioning </i></b> <a href="pubs/JPRIT.pdf">[pdf]</a>
+									<br><font color="blue">Journal of Research and Practice in Information Technology (JRPIT): 40(1), 2008</font>
+									<br><i>Nan Tang, Jeffrey Xu Yu, Kam-Fai Wong, and Jianxin Li</i>
+									</p>
+
+									<h2>2006</h2>
+
+									<p>
+									<b><i>Answering XML queries using path-based indexes: A survey</i></b> <a href="pubs/wwwj06.pdf">[pdf]</a>
+									<br><font color="blue">World Wide Web Journal (WWWJ): 9(3), 2006</font>
+									<br><i>Kam-Fai Wong, Jeffrey Xu Yu, and Nan Tang</i>
+									</p>
+
+
+									<p>
+									<b><i>Fast structural join with a location function</i></b> <a href="pubs/dasfaa06a.pdf">[pdf]</a>
+									<br><font color="blue">The 11th Database Systems for Advanced Applications (DASFAA), Singapore, 2006</font>
+									<br><i>Nan Tang, Jeffrey Xu Yu, Kam-Fai Wong, and Haifeng Jiang</i>
+									</p>
+
+									<p>
+									<b><i>Fast reachability query processing </i></b> <a href="pubs/dasfaa06b.pdf">[pdf]</a>
+									<br><font color="blue">The 11th Database Systems for Advanced Applications (DASFAA), Singapore, 2006</font>
+									<br><i>Jiefeng Cheng, Jeffrey Xu Yu, and Nan Tang</i>
+									</p>
+
+
+									<h2>2005</h2>
+
+									<p>
+									<b><i>Accelerating XML structural join by partitioning </i></b> <a href="pubs/dexa05.pdf">[pdf]</a>
+									<br><font color="blue">Database and Expert Systems Applications (DEXA), Copenhagen, Denmark, 2005</font>
+									<br><i>Nan Tang, Jeffrey Xu Yu, Kam-Fai Wong, Kevin Lu, and Jianxin Li</i>
+									</p>
+
+									<p>
+									<b><i>Win: An efficient data placement strategy for parallel XML databases</i></b> <a href="pubs/icpads05.pdf">[pdf]</a>
+									<br><font color="blue">The 16th International Conference on Parallel and Distributed System (ICPADS), Fukuoka, Japan, 2005</font>
+									<br><i>Nan Tang, Guoren Wang, Jeffrey Xu Yu, Kam-Fai Wong, and Ge Yu</i>
+									</p>
+
+
+									<h2>2004</h2>
+
+									<p>
+									<b><i>Answering XML twig queries with automata </i></b> <a href="pubs/apweb04.pdf">[pdf]</a>
+									<br><font color="blue">The 6th Asia-Pacific Web Conference (APWeb), Hangzhou, China, 2004</font>
+									<br><i>Bing Sun, Bo Zhou, Nan Tang, Guoren Wang, Ge Yu, and Fulin Jia</i>
+									</p>
+
+
+									<h2>2003</h2>
+
+									<p>
+									<b><i>A Data placement and query processing based on RPE parallelisms </i></b> <a href="pubs/compsac.pdf">[pdf]</a>
+									<br><font color="blue">The 27th International Computer Software and Applications Conference (COMPSAC), Dallas, Texas, USA, 2003</font>
+									<br><i>Yaxin Yu, Guoren Wang, Ge Yu, Gang Wu, Junan Hu, and Nan Tang</i>
+									</p>
+
+									<h2>Patents</h2>
+
+									<p>
+										<b><i>Dependable Data Repairing with Fixing Rules.</i></b> <font color="blue">Qatar Computing Research Institute, HBKU</font> (PCT/EP2013/052476).
+										<br><b><i>Towards dependable Data Repairing with Fixing Rules.</i></b> <font color="blue">Qatar Computing Research Institute, HBKU</font> (PCT/EP2014/052494).
+										<br><b><i>KATARA: A Data Cleaning System Powered by Knowledge Bases and Crowdsourcing. </i></b> <font color="blue">Qatar Computing Research Institute, HBKU</font> (PCT/GB2014/051670).			
+										<br><b><i>NADEEF: A holistic and extensible data cleaning platform. </i></b> <font color="blue">Qatar Computing Research Institute, HBKU</font> (PCT/EP2012/062446).		
+										<br><b><i>Generalized Data Cleaning using SAT-Solvers. </i></b> <font color="blue">Qatar Computing Research Institute, HBKU</font> (PCT/EP2012/062445).																		
+									</p>
+								</article>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
 	</body>
 </html>
