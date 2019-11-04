@@ -49,11 +49,95 @@
 					<div class="container">
 						<div id="content">
 							<!-- Content -->
+							<article>
+								<h2>Overview</h2>
+								<p>
+									The first step of any data analytics is to prepare the data. Please find more about data preparation <a href="http://da.qcri.org/ntang/dataprep.html">here</a>.
+								</p>
+
+								<p>
+									Now, given a well prepared dataset, a user typically needs data visualizations to help understand the data. Instead of asking the user to be familiar with visualization languages such as Vega-Lite, Vega, D3, or tools such as Tableau, we want to enable novices to easily generate visualizations. Naturally, a user-friendly query interface is Google-like keywords, where have proposed in our <a href="http://da.qcri.org/ntang/pubs/edbt2018.pdf">vision paper</a>, and showed in a <a href="http://da.qcri.org/ntang/pubs/deepeyesigmod2018demo.pdf">SIGMOD demo</a>. 
+									Moreover, we need to automatically recommend good visualizations to the user (see <a href="http://da.qcri.org/ntang/pubs/icde2018deepeye.pdf">paper</a> for more details). All these are components of the DeepEye system.
+								</p>
+
+								<p>
+									When a user picks a visualization, oftentimes, the visualization might be wrong because the underlying data is dirty. Instead of cleaning the entire dataset, which is prohibitively expensive in practice, we propose to progressively clean the visualization through interactive data cleaning (see <a href="http://da.qcri.org/ntang/pubs/icde20vis.pdf">paper</a> for more details).
+								</p>
+							</article>
 							<article>											
-							<h2>Smart Data Systems -- Under Construction</h2>
-							<p>
-							</p>
-						</article>
+								<h2>DeepEye: Democratizing Data Visualization <a href="http://www.deepeye.tech"><font color="blue">(online demo)</font></a></h2>
+								
+								<h3>Why?</h3>
+								A picture is worth a thousand words. A good visualization is worth a terabyte of data. Nowadays, the ability to create good visualizations has shifted from a nice-to-have skill to a must-have skill for all data analysts to help managers make business decisions, where data is the primary force behind for its high volume and overwhelming velocity. Despite the overwhelming choices of interactive data visualization tools for experts, non-experts have poor choices for effective visualization recommendation systems such that everyone can easily create great visualizations.
+								
+								<h3>What are the fundamental problems?</h3>
+								<h4>Visualization Recognition</h4>
+								Given one visualization, such as a bar chart or a scatter plot, is it good from understanding human perception?
+								<h4>Visualization Ranking</h4>
+								Given two visualizations, can we quantify them and say that which one is better?
+								<h4>Visualization Searching</h4>
+								It might be very hard, if not impossible, to guess what a user really wants. Can they do simple keyword like search?
+
+								<h3>How?</h3>
+								Our basic idea is "visualization by examples" – there are plenty of generic priors to showcase great visualizations, which can be used to learn human perception, e.g., a bar chart with more than 50 bars is clearly bad.
+
+								Given thousands of good examples and some human labeled ranking orders, DeepEye trains a binary classifier (a random forest, or a SVM) for visualization recognition, and uses a supervised learning-to-rank model for visualization ranking.
+							</article>
+
+							<article>
+								<h2>Interactive Cleaning for Progressive Visualization</h2>
+								
+								<h3>Why?</h3>
+								Data visualizations are not always exact and good, and the uncertainty of data visualization may misguide users by showing false discoveries. One common reason for generating such bad (uncertain) visualizations is because real-life data is dirty.
+
+								<h3>How?</h3>
+								Practically, it is too expensive to completely clean a dataset. Intuitively, compared with cleaning the entire dataset, only cleaning task (such as a bar chart or a pie chart) relevant data should be much cheaper. We study a new problem, interactive cleaning for progressive visualization, to progressively improve the quality of visualization by minimizing the cost of interacting with the user to clean the visualization-aware data. Please find more details in the <a href="http://da.qcri.org/ntang/pubs/icde20vis.pdf">paper</a>.
+
+							</article>
+							<article>
+								<h2>Publications</h2>
+
+								<p>
+								<b><i>Interactive Cleaning for Progressive Visualization through Composite Questions</i></b>  <a href="pubs/icde20vis.pdf">[pdf]</a>
+								<br><font color="blue">The 36th IEEE International Conference on Data Engineering (ICDE), Dallas, Texas, USA, 2020 </font>
+								<br><i>Yuyu Luo, Chengliang Chai, Xuedi Qin, Nan Tang, and Guoliang Li</i>
+								</p>	
+
+								<p>
+								<b><i>Making Data Visualization More Efficient and Effective: A Survey</i></b> <a href="pubs/vldbjvissurvey.pdf">[pdf]</a>
+								<br><font color="blue">The VLDB Journal (VLDBJ), to appear </font>
+								<br><i>Xuedi Qin, Yuyu Luo, Nan Tang, and Guoliang Li</i>
+								</p>	
+
+								<p>
+								<b><i>Towards Democratizing Relational Data Visualization [Tutorial]</i></b> 
+								<a href="pubs/sigmod2019tutorial.pdf">[pdf]</a> 
+								<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD Tutorial), Amsterdam, The Netherlands, 2019 </font>
+								<br><i>Nan Tang, Eugene Wu and Guoliang Li</i>
+								<br> <b>Presentations:</b> Introduction, 30 mins <a href="pubs/nan.part1.key">[keynote]</a>; 
+								Efficient data visualization, 1 hour <a href="pubs/wu.pptx">[ppt]</a>; 
+								Smart data visualization, 1 hour <a href="pubs/guoliang.key">[keynote]</a>; 
+								Uncertainty, collaborative and immersive data visualization, 30 mins <a href="pubs/nan.part4.key">[keynote]</a>
+								</p>	
+
+								<p style="text-align:left">
+								<b><i>DeepEye: Creating Good Data Visualizations by Keyword Search</i></b>
+								<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD demo), Houston, USA, 2018 </font>
+								<br><i>Yuyu Luo, Xuedi Qin, Nan Tang, Guoliang Li and Xinran Wang</i>
+								</p>
+
+								<p style="text-align:left">
+								<b><i>DeepEye: Visualizing Your Data by Keyword Search</i></b>
+								<br><font color="blue">The 21st International Conference on Extending Database Technology (EDBT vision paper), Austria, Vienna, 2018 </font>
+								<br><i>Xuedi Qin, Yuyu Luo, Nan Tang, and Guoliang Li</i>
+								</p>
+
+								<p style="text-align:left">
+								<b><i>DeepEye: Towards Automatic Data Visualization</i></b> 
+								<br><font color="blue">The 34th IEEE International Conference on Data Engineering (ICDE), Paris, France, 2018 </font>
+								<br><i>Yuyu Luo, Xuedi Qin, Nan Tang, and Guoliang Li</i>
+								</p>
+							</article>
 						</div>
 					</div>
 				</div>
