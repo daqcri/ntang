@@ -50,9 +50,22 @@
 						<div id="content">
 							<!-- Content -->
 							<article>											
-							<h2>Miscellaneous -- Under Construction</h2>
+							<h2>Graph Stream Summarization</h2>
+							<h3>What are graph streams?</h3>
+							A graph stream refers to the graph with edges being updated sequentially in a form of a stream.
+							
+							<h3>What are the typical applications?</h3>
+							In network traffic data, a node is an IP address (possibly) associated with a port number, and an edge is a message that one IP sent to another IP. In social networks, a node is a unique profile, and an edge could be a relationship or a message between two persons.
+
+							<h3>Key Technology</h3>
+							Due to the sheer volume and highly dynamic nature of graph streams, the practical way of handling them is by summarization. Given a graph stream G, directed or undirected, the problem of graph stream summarization is to summarize G as Sg with a much smaller (sublinear) space, linear construction time and constant maintenance cost for each edge update, such that Sg allows many queries over G to be approximately conducted efficiently. The widely used practice of summarizing data streams is to treat each stream element independently by e.g., hash- or sample-based methods, without maintaining the connections (or relationships) between elements. Hence, existing methods can only solve ad-hoc problems, without supporting diversified and complicated analytics over graph streams. We present TCM, a generalized graph stream summary. Given an incoming edge, it summarizes both node and edge information in constant time. Consequently, the summary forms a graphical sketch where edges capture the connections inside elements, and nodes maintain relationships across elements.
+
+							<h3>Publications</h3>
 							<p>
-							</p>
+								<b><i>Graph Stream Summarization: From Big Bang to Big Crunch </i></b> <a href="pubs/[sigmod2016]graph.stream.summarization.pdf">[pdf]</a>
+								<br><font color="blue">ACM SIGMOD Conference on Management of Data (SIGMOD), San Francisco, USA, 2016 </font>
+								<br><i>Nan Tang, Qing Chen, and Prasenjit Mitra</i>
+							</p>	
 						</article>
 						</div>
 					</div>
