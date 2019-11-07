@@ -52,13 +52,18 @@
 							<article>											
 							<h2>Graph Stream Summarization</h2>
 							<h3>What are graph streams?</h3>
-							A graph stream refers to the graph with edges being updated sequentially in a form of a stream.
+							<p>A graph stream refers to the graph with edges being updated sequentially in a form of a stream.</p>
+							
 							
 							<h3>What are the typical applications?</h3>
+							<p>
 							In network traffic data, a node is an IP address (possibly) associated with a port number, and an edge is a message that one IP sent to another IP. In social networks, a node is a unique profile, and an edge could be a relationship or a message between two persons.
+							</p>
 
 							<h3>Key Technology</h3>
+							<p>
 							Due to the sheer volume and highly dynamic nature of graph streams, the practical way of handling them is by summarization. Given a graph stream G, directed or undirected, the problem of graph stream summarization is to summarize G as Sg with a much smaller (sublinear) space, linear construction time and constant maintenance cost for each edge update, such that Sg allows many queries over G to be approximately conducted efficiently. The widely used practice of summarizing data streams is to treat each stream element independently by e.g., hash- or sample-based methods, without maintaining the connections (or relationships) between elements. Hence, existing methods can only solve ad-hoc problems, without supporting diversified and complicated analytics over graph streams. We present TCM, a generalized graph stream summary. Given an incoming edge, it summarizes both node and edge information in constant time. Consequently, the summary forms a graphical sketch where edges capture the connections inside elements, and nodes maintain relationships across elements.
+							</p>
 
 							<h3>Publications</h3>
 							<p>
@@ -67,6 +72,32 @@
 								<br><i>Nan Tang, Qing Chen, and Prasenjit Mitra</i>
 							</p>	
 						</article>
+
+						<article>											
+							<h2>JARVIS: Immersive, Interactive, and Intelligent Data Analytics</h2>
+
+							<h3>Motivation</h3>
+							<p>
+							JARVIS is immersive under the virtual/mixed reality environment, interactive that the user can interact with data and operations physically, and intelligent that can help everyone naturally program a workflow via text, voice, or gesture. 
+							</p>
+
+							<h3>Lessons Learned</h3>		
+							<p>										
+							We have tried Microsoft HoloLens (for Mixed Reality) and Acer VR (for Virtual Reality), and decided that VR devices are a better choice. 
+
+							<br>
+							Using Acer VR, we have tried simple 3D visualizations such as bar/par chart, maps, as well as matrices and graphs (for Cyber networks). 
+
+							<br>
+							We have also used <a href="https://github.com/ChatScript/ChatScript">ChatScript</a> as a ChatBot to communicate with humans. 
+
+							<br>
+							Our target application is to build a dashboard for Cyber Security group to monitor and analyze Cyber networks, such as reasoning about malicious users. After one year of effort, we closed this project, mainly because that the proposed technologies cannot serve the purpose of our Cyber Security group. That is, using ChatBot, gestures, and data immersion does not feel very natural to our targeted users. However, it was definitely a fun experience to lead and work in such a project, and tried many new technologies that are far from my comfortable zone.
+
+							<br> 
+							One fundamental problem that is not answered is the meaning of visualizing abstract data using virtual reality. In other words, it makes perfect sense to see 3D objects like humans, buildings, chemical compounds, and so on. However, it is not clear that what are the principles to doing so for abstract data such as tables, texts, or graphs. A related research object is called data physicalization (you may find more from my SIGMOD 2019 tutorial titled "Towards Democratizing Relational Data Visualization" from <a href="http://da.qcri.org/ntang/publications.html">here</a>).
+							</p>
+						</article>						
 						</div>
 					</div>
 				</div>
