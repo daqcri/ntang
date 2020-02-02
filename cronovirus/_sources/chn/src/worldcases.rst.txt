@@ -1,0 +1,10 @@
+.. _chn-src-worldcases:
+
+
+====================
+各国分布地图
+====================
+ 
+.. image:: images/world.png
+   :width: 350
+   :alt: Chinese Distribution

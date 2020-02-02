@@ -1,0 +1,13 @@
+.. _chn-src-videos:
+
+
+====================
+科普小视频
+====================
+
+.. video:: images/1580450610655994.mp4
+   :width: 500
+   :height: 300
+   :autoplay:
+   :nocontrols:
+ 

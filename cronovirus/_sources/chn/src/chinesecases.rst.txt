@@ -1,0 +1,10 @@
+.. _chn-src-chinesecases:
+
+
+====================
+各省分布地图
+====================
+ 
+.. image:: images/chn.png
+   :width: 350
+   :alt: Chinese Distribution
