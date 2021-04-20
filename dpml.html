@@ -18,11 +18,11 @@
 		  		<a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.jpg);"></a>
           <h3 style="color:White;">Nan Tang</h3>
           <h6>Senior Scientist</h6>
-          QCRI, HBKU
-          <br> Qatar Foundation
-          <br> ntang@hbku.edu.qa
-          <br>
-          <br>
+          <p style="font-size:13px">
+            Qatar Center for Artificial Intelligence
+            <br> QCRI, HKBU, Qatar Foundation
+            <br> <a href="mailto:ntang@hbku.edu.qa">ntang@hbku.edu.qa</a>
+          </p>          
 
 	        <ul class="list-unstyled components mb-5">
             <li>
@@ -115,7 +115,7 @@
         <h5>DAGAN: Adaptive Data Augmentation for Supervised Learning over Missing Data</h5>
          Real-world data is dirty, which causes serious problems in (supervised) ML. The widely used practice in such scenario is to first repair the labeled source (a.k.a. train) data using rule-, statistical- or ML- based methods and then use the “repaired” source to train an ML model. During production, unlabeled target (a.k.a. test) data will also be repaired, and is then fed in the trained ML model for prediction. However, this process often causes a performance degradation when the source and target datasets are dirty with different noise patterns, which is common in practice. 
 
-         <br>
+         <br><br>
          We propose an end-to-end adaptive data augmentation framework, called <a href="pubs/[vldb21]dagan.pdf">DAGAN</a> that uses a pair of Generative Adversarial Networks (GANs), for handling missing data in supervised ML. One GAN learns noise patterns from the target data, and the other GAN learns to adapt the source data with the extracted target noise patterns while still preserving supervision signals in the source. We have shown that DAGAN is the most robust missing data imputation solution for supervised ML for different missing patterns, MCAR, MAR, and MNAR.
         </p>
 
