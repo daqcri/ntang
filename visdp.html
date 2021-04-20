@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Research</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="p-4 pt-5">
+		  		<a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.jpg);"></a>
+          <h3 style="color:White;">Nan Tang</h3>
+          <h6>Senior Scientist</h6>
+          QCRI, HBKU
+          <br> Qatar Foundation
+          <br> ntang@hbku.edu.qa
+          <br>
+          <br>
+
+	        <ul class="list-unstyled components mb-5">
+            <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Research Interests</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                    <a href="dp.html">Traditional Data Prep</a>
+                </li>
+                <li>
+                    <a href="dldp.html">Deep Learning for Data Prep</a>
+                </li>
+                <li>
+                    <a href="dpml.html">Data Prep for Machine Learning</a>
+                </li>
+                <li class="active">
+                    <a href="visdp.html">Visualization for Data Prep</a>
+                </li>                
+              </ul>
+            </li>
+            <li>
+                <a href="publications.html">Publications</a>
+            </li>
+	          <li>
+	            <a href="bio.html">Bio</a>
+	          </li>
+	          <li>
+              <a href="awards.html">Awards</a>
+	          </li>
+	          <li>
+              <a href="talks.html">Talks</a>
+	          </li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+	        </ul>
+
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        </div>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bio.html">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="awards.html">Awards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="talks.html">Talks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>                
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <h2 class="mb-4">Visualization for All</h2>
+        <p>
+        My initial goal was to help users understand the tables discovered from a data lake beyond eyeballing, in particular for the <a href="http://dsail.csail.mit.edu/index.php/data-civilizer/">Data Civilizer</a> project. I started to explore (automatic) data visualization from 2018. However, the overwhelming choices of interactive data visualization tools (e.g., Tableau and D3) only allow experts to create good visualizations. Non-experts have poor choices for visualization recommendation systems, which allow anyone to create good visualizations automatically or simply like a Google search.
+        </p>
+
+        <p>
+        <h5>Visualization Recommendation</h5>
+         DeepEye is among the first ML-based visualization recommendation systems. It tackles two problems: 
+
+         <ol>
+           <li><b>Visualization recognition:</b> whether a visualization for a given dataset is interesting, from an understanding of human perception; and</li>
+           <li><b>Visualization ranking:</b> given two visualizations, which one is “better”. </li>
+         </ol>
+
+         DeepEye tackles (1) by training binary classifiers (decision trees and SVM) to decide whether a particular visualization is good, and (2) by using a supervised learning-to-rank model to rank good visualizations. 
+        </p>
+        <p>
+          The initial DeepEye paper is at <a href="pubs/icde2018deepeye.pdf">ICDE'18</a>. Our vision to extend it to support keyword search is at <a href="pubs/edbt2018.pdf">EDBT'18</a>. A demonstration can be found at <a href="pubs/deepeyesigmod2018demo.pdf">SIGMOD demo'18</a>. We have also adopted DeepEye for COVID-19 data analysis at <a href="pubs/DEBulletin_COVID19.pdf">IEEE Data Bulletin'20</a>.
+        </p>
+
+        <p>
+        <h5>Natural Language to Visualization </h5>
+        A common concern for visualization recommendation systems is that, they may recommend visualizations that could be worse than nothing by misleading users, simply because it is hard to guess a user’s query intent. We extended DeepEye to support Google-like keyword search, such as “show me the trend of flight delays”, using NLP semantic parsers. Apparently, the state-of-the-art natural language techniques are deep learning based, but a big obstacle for advancing the field of NL2VIS is the lack of benchmarks. We propose the first NL2VIS benchmark, called nvBench (SIGMOD 2021).
+        <!-- %, and we are the first to apply a Sequence-to-Sequence neural translation model on learning NL2VIS translation and empirically show that it significantly outperforms the state-of-the-art semantic parser-based NL2VIS translation techniques. -->
+        </p>
+
+        <p>
+        <h5>COVID-19 Dashboards</h5>
+
+        I have worked on a few COVID-19 dashboards.
+
+        <ul>
+         <li> 
+            <b> Qatar situation dashboard </b> (<a href="https://covid-research.qcri.org/situation/">link</a>):
+              I have developed a situation dashboard for Qatar, which was used by MOI Qatar, and was showcased on AlJazeera and Turkish TV. 
+          </li>
+
+          <li> <b> COVID mobility analysis</b> (<a href="https://covid-19-mobility.qcri.org/">link</a>):
+              Google released the mobility data for help people combat the COVID-19 pandemic. I built a Google mobility dashboard based on data released by Google, which was used by MOPH Qatar, Kuwait Health Ministry, and Nigerian National Bureau of Statistics. 
+          </li>
+          
+          <li> <b> COVID data and mobility analysis in China. </b> 
+            In early 2020, we built a COVID-19 dashboard that attracted millions of visits, and worked with China Mobile to visualize and analyze the trajectories of infected persons in Beijing (<a href="pubs/DEBulletin_COVID19.pdf">IEEE Data Bulletin'20</a>).
+          </li>
+        </ul>
+        </p>
+      </div>
+		</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
