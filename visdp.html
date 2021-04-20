@@ -113,6 +113,14 @@
         </p>
 
         <p>
+        For a general introduction about data visualization for data preparation, please check out:
+        <ul>
+           <li><b>Towards Democratizing Relational Data Visualization:</b> a <a href="pubs/sigmod2019tutorial.pdf">tutorial</a> at SIGMOD'19, co-presented with Eugene Wu <a href="pubs/wu.pptx">[part 2]</a> from Columbia University and Guoliang Li <a href="pubs/guoliang.key">[part 3]</a> from Tsinghua University, where I presented the <a href="pubs/nan.part1.key">[part 1]</a> and the <a href="pubs/nan.part4.key">[part 4]</a>. </li>
+           <li><b>Making Data Visualization More Efficient and Effective: A Survey</b>, published at <a href="pubs/vldbjvissurvey.pdf">VLDB Journal'20</a>. </li>
+         </ul>
+        </p>                  
+
+        <p>
         <h5>Visualization Recommendation</h5>
          DeepEye is among the first ML-based visualization recommendation systems. It tackles two problems: 
 
@@ -124,12 +132,15 @@
          DeepEye tackles (1) by training binary classifiers (decision trees and SVM) to decide whether a particular visualization is good, and (2) by using a supervised learning-to-rank model to rank good visualizations. 
         </p>
         <p>
-          The initial DeepEye paper is at <a href="pubs/icde2018deepeye.pdf">ICDE'18</a>. Our vision to extend it to support keyword search is at <a href="pubs/edbt2018.pdf">EDBT'18</a>. A demonstration can be found at <a href="pubs/deepeyesigmod2018demo.pdf">SIGMOD demo'18</a>. We have also adopted DeepEye for COVID-19 data analysis at <a href="pubs/DEBulletin_COVID19.pdf">IEEE Data Bulletin'20</a>.
+          The initial DeepEye paper is at <a href="pubs/icde2018deepeye.pdf">ICDE'18</a>. A demonstration can be found at <a href="pubs/deepeyesigmod2018demo.pdf">SIGMOD demo'18</a>. We have also adopted DeepEye for COVID-19 data analysis at <a href="pubs/DEBulletin_COVID19.pdf">IEEE Data Bulletin'20</a>.
         </p>
 
         <p>
         <h5>Natural Language to Visualization </h5>
-        A common concern for visualization recommendation systems is that, they may recommend visualizations that could be worse than nothing by misleading users, simply because it is hard to guess a user’s query intent. We extended DeepEye to support Google-like keyword search, such as “show me the trend of flight delays”, using NLP semantic parsers. Apparently, the state-of-the-art natural language techniques are deep learning based, but a big obstacle for advancing the field of NL2VIS is the lack of benchmarks. We propose the first NL2VIS benchmark, called nvBench at <a href="">SIGMOD 2021</a>.
+        A common concern for visualization recommendation systems is that, they may recommend visualizations that could be worse than nothing by misleading users, simply because it is hard to guess a user’s query intent. We extended DeepEye to support Google-like keyword search at <a href="pubs/edbt2018.pdf">EDBT'18</a>, such as “show me the trend of flight delays”, using NLP semantic parsers.
+        
+        <br> <br>
+        Apparently, the state-of-the-art natural language techniques are deep learning based, but a big obstacle for advancing the field of NL2VIS is the lack of benchmarks. We propose the first NL2VIS benchmark, called nvBench at <a href="">SIGMOD 2021</a>.
         <!-- %, and we are the first to apply a Sequence-to-Sequence neural translation model on learning NL2VIS translation and empirically show that it significantly outperforms the state-of-the-art semantic parser-based NL2VIS translation techniques. -->
         </p>
 
