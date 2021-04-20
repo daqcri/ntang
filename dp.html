@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Traditional Data Prep</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="p-4 pt-5">
+		  		<a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.jpg);"></a>
+          <h3 style="color:White;">Nan Tang</h3>
+          <h6>Senior Scientist</h6>
+          QCRI, HBKU
+          <br> Qatar Foundation
+          <br> ntang@hbku.edu.qa
+          <br>
+          <br>
+
+	        <ul class="list-unstyled components mb-5">
+            <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Research Interests</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li class="active">
+                    <a href="dp.html">Traditional Data Prep</a>
+                </li>
+                <li>
+                    <a href="dldp.html">Deep Learning for Data Prep</a>
+                </li>
+                <li>
+                    <a href="dpml.html">Data Prep for Machine Learning</a>
+                </li>
+                <li>
+                    <a href="visdp.html">Visualization for Data Prep</a>
+                </li>                
+              </ul>
+            </li>
+            <li>
+                <a href="publications.html">Publications</a>
+            </li>
+	          <li>
+	            <a href="bio.html">Bio</a>
+	          </li>
+	          <li>
+              <a href="awards.html">Awards</a>
+	          </li>
+	          <li>
+              <a href="talks.html">Talks</a>
+	          </li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+	        </ul>
+
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        </div>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bio.html">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="awards.html">Awards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="talks.html">Talks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>                
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <h2 class="mb-4">Traditional Data Prep</h2>
+        <p>
+       My goal is to solve real-world data preparation problems. Hence, a lot of my time has been involved in understanding what are data errors from different real-world scenarios, through interacting with several organizations, such as MIT VPF, Merck, TAMR, Informatica, Intel, and many others.
+        </p>
+
+        <p>
+        <h5> Error Detection </h5>
+
+        We have collected many real-world data errors "Detecting Data Errors:
+        Where are we and what needs to be done?" <a href="pubs/vldb16evaluation.pdf">[PVLDB’16]</a>, and devised methods to detect different types of data errors,  
+        <ul>
+          <li>Raha: A Configuration-Free Error Detection System <a href="pubs/raha.pdf">[SIGMOD’19]</a> <a href="https://github.com/BigDaMa/raha">[code]</a> </li>          
+          <li>Discovering Mis-Categorized Entities <a href="pubs/icde2018miscategorized.pdf">[ICDE’18]</a></li>
+          <li>FAHES: A Robust Disguised Missing Values Detector <a href="pubs/kdd18.pdf">[KDD’18]</a></li>
+          <li>UGuide – User-Guided Discovery of FD-Detectable Errors <a href="pubs/sigmod2017.pdf">[SIGMOD’17]</a></li>          
+        </ul>
+        </p>
+
+
+        <p>
+        <h5> Trusted Data Repairing </h5>
+            In practice, users are hesitant to see their data being automatically repaired, unless these repairs are ensured to be correct or explainable. My works on trusted data repairing include:
+
+            <ul>
+              <li> <b>Rule-based methods:</b>
+                <ul>
+                  <li>Pattern Functional Dependencies for Data Cleaning <a href="pubs/pfds.pdf">[PLVDB'20]</a></li>
+                  <li>Towards Dependable Data Repairing with Fixing Rules <a href="pubs/[sigmod2014]fixing.rules.pdf">[SIGMOD'14]</a></li>                  
+                </ul>
+              </li>
+              <li><b>Using master data:</b> 
+                <ul>
+                  <li>Proof Positive and Negative in Data Cleaning <a href="pubs/sherlock.pdf">[ICDE'15]</a></li>
+                  <li>Towards Certain Fixes with Editing Rules and Master Data <a href="pubs/pvldb10a.pdf">[PVLDB'10, the best paper]</a></li>      
+                </ul>                              
+              </li>
+              <li><b>Using knowledge bases:</b>  
+                <ul>
+                  <li>Cleaning Relations using Knowledge Bases <a href="pubs/icde2017.pdf">[ICDE'17]</a></li>
+                  <li>KATARA: Reliable Data Cleaning with Knowledge Bases and Crowdsourcing <a href="pubs/katarademo.pdf">[SIGMOD'15]</a></li>      
+                </ul>                   
+              <li><b>Human-in-the-loop</b>:</li>
+                <ul>
+                  <li>Interactive and Deterministic Data Cleaning: A Tossed Stone Raises a Thousand Ripples  <a href="pubs/falcon.pdf">[SIGMOD'16]</a></li>                  
+                </ul>  
+            </ul> 
+        </p>
+
+
+        <p>
+        <h5> A Commodity Data Cleaning System </h5>
+          There was no commodity platform similar to general purpose DBMSs that can be easily customized and deployed to solve application-specific data quality problems. I led the project NADEEF, which provides a unified programing interface for declaratively specifying what are data errors and
+          (possibly) how to fix them, and a core that holistically handles the detection and repairing of data errors.
+          <ul>
+            <li>NADEEF: A Commodity Data Cleaning System <a href="pubs/sigmod13.pdf">[SIGMOD'13]</a> <a href="https://github.com/Qatar-Computing-Research-Institute/NADEEF">[code]</a> </li>        
+            <li>BigDansing: A System for Big Data Cleansing <a href="pubs/bigdansing.pdf">[SIGMOD'15]</a></li>          
+          </ul>  
+        </p>
+
+        <p>
+        <h5> Data Prep as a Service </h5>
+          Collaborated with MIT, we are building <a href="http://dsail.csail.mit.edu/index.php/data-civilizer/">Data Civilizer</a> with a suite of prebuilt tools for solving end-to-end data preparation problems. During interacting with real-world scenarios, we also developed the following new components.
+
+          <ul>
+            <li><b>Data discovery:</b> we have solved the problem of linking the datasets in a data lake for data discovery, driven by real-world scenarios from Merck and Scotiabank.  
+                <ul>
+                  <li>Seeping Semantics: Linking Datasets using Word Embeddings for Data Discovery  <a href="href=pubs/icde2018semantic.pdf">[ICDE'18]</a></li>                  
+                </ul>  
+            </li>        
+            <li><b>Interpretable entity resolution:</b> we propose to use program synthesis by examples to discover rules on entity matching and entity consolidation, driven by TAMR use cases that their customers require their entity resolution solutions to be interpretable.
+              <ul>
+                  <li>Unsupervised String Transformation Learning for Entity Consolidation  <a href="pubs/icde2019.pdf">[ICDE'19]</a></li> 
+                  <li>Synthesizing Entity Matching Rules by Examples  <a href="pubs/synthesizer.pdf">[PVLDB'18]</a></li>
+                </ul>  
+            </li>
+            <li><b>Relational table storage and query co-optimization:</b> we develop deductive program synthesis algorithms for co-optimizing data storage and query plan, to improve the efficiency of pre-defined workflows with relatively static data and parameterized queries.
+              <ul>
+                  <li>Deductive Optimization of Relational Data Storage  <a href="pubs/[oopsla20] Deductive Optimization of Relational Data Storage.pdf">[OOPSLA'20]</a> <a href="https://github.com/jfeser/castor">[code]</a>    </li>  
+                </ul>   
+            </li>
+            <li><b>Data debugging:</b> we study the problem of debugging data (not code) problems in data science pipelines, by working with Massachusetts General Hospital (MGH), Intel MIT lab, and All Chicago (an organization that helps homeless people in Chicago).
+              <ul>
+                  <li>Dagger: A Data (not code) Debugger  <a href="pubs/cidr20dagger.pdf">[CIDR'20]</a></li> 
+                </ul>  
+            </li>
+          </ul>  
+        </p>
+
+        <p>
+        <h5> Collaborative Data Prep </h5>
+          In data prep, oftentimes, human-in-the-loop is not enough. We need crowd-in-the-loop to collaboratively clean and annotate data. Collaborated with University of Wisconsin-Madison, we are building such systems.
+
+          <ul>
+            <li>CoClean: We built an Overleaf-like platform, on top of Python Pandas DataFrame, that enables multiple users to collaboratively clean the same dataset, which handles user synchronization and annotation aggregation, and allows customization.
+              <ul>
+                  <li>CoClean: Collaborative Data Cleaning  <a href="pubs/coclean.pdf">[SIGMOD demo'20]</a></li> 
+              </ul>  
+            </li>          
+          </ul>  
+        </p>
+      </div>
+		</div>>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

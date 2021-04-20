@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Data Prep for Machine Learning</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="p-4 pt-5">
+		  		<a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.jpg);"></a>
+          <h3 style="color:White;">Nan Tang</h3>
+          <h6>Senior Scientist</h6>
+          QCRI, HBKU
+          <br> Qatar Foundation
+          <br> ntang@hbku.edu.qa
+          <br>
+          <br>
+
+	        <ul class="list-unstyled components mb-5">
+            <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Research Interests</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                    <a href="dp.html">Traditional Data Prep</a>
+                </li>
+                <li>
+                    <a href="dldp.html">Deep Learning for Data Prep</a>
+                </li>
+                <li class="active">
+                    <a href="dpml.html">Data Prep for Machine Learning</a>
+                </li>
+                <li>
+                    <a href="visdp.html">Visualization for Data Prep</a>
+                </li>                
+              </ul>
+            </li>
+            <li>
+                <a href="publications.html">Publications</a>
+            </li>
+	          <li>
+	            <a href="bio.html">Bio</a>
+	          </li>
+	          <li>
+              <a href="awards.html">Awards</a>
+	          </li>
+	          <li>
+              <a href="talks.html">Talks</a>
+	          </li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+	        </ul>
+
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        </div>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bio.html">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="awards.html">Awards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="talks.html">Talks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>                
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <h2 class="mb-4">Data Prep for Machine Learning</h2>
+        <p>This line of research studies data preparation for data-centric machine learning, especially for co-debugging data and label problems. More specifically, I am working on either improve the data quality, the label quality, or both, in order to train better and robust machine learning models.
+        </p>
+
+        <p>
+        <h5>DAGAN: Adaptive Data Augmentation for Supervised Learning over Missing Data</h5>
+         Real-world data is dirty, which causes serious problems in (supervised) ML. The widely used practice in such scenario is to first repair the labeled source (a.k.a. train) data using rule-, statistical- or ML- based methods and then use the “repaired” source to train an ML model. During production, unlabeled target (a.k.a. test) data will also be repaired, and is then fed in the trained ML model for prediction. However, this process often causes a performance degradation when the source and target datasets are dirty with different noise patterns, which is common in practice. 
+
+         <br>
+         We propose an end-to-end adaptive data augmentation framework, called <a href="pubs/[vldb21]dagan.pdf">DAGAN</a> that uses a pair of Generative Adversarial Networks (GANs), for handling missing data in supervised ML. One GAN learns noise patterns from the target data, and the other GAN learns to adapt the source data with the extracted target noise patterns while still preserving supervision signals in the source. We have shown that DAGAN is the most robust missing data imputation solution for supervised ML for different missing patterns, MCAR, MAR, and MNAR.
+        </p>
+
+        
+      </div>
+		</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

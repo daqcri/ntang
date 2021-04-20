@@ -1,175 +1,134 @@
-<!DOCTYPE HTML>
-<!--
-	Verti by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Nan Tang</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload left-sidebar">
-		<div id="page-wrapper">
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Research</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<header id="header" class="container">
-						<!-- Logo -->
-							<div id="logo">
-								<h1><a href="index.html">Nan Tang</a></h1>								
-							</div>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="p-4 pt-5">
+		  		<a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.jpg);"></a>
+          <h3 style="color:White;">Nan Tang</h3>
+          <h6>Senior Scientist</h6>
+          QCRI, HBKU
+          <br> Qatar Foundation
+          <br> ntang@hbku.edu.qa
+          <br>
+          <br>
 
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li class="current"> <a href="index.html">HOME</a></li>
-									<!-- <li>
-										<a href="projects.html">PROJECTS</a>
-										<ul>
-											<li><a href="dataprep.html">Data Preparation</a></li>
-											<li><a href="smartdata.html">Smart Data Systems</a></li>
-											<li><a href="crowd.html">Collaborative Data Science</a></li>
-											<li><a href="miscellaneous.html">Miscellaneous</a></li>
-										</ul>
-									</li>			
-									-->
-									<li><a href="publications.html">PUBLICATIONS</a></li>
-									<li><a href="bio.html">BIO</a></li>
-									<li><a href="awards.html">AWARDS</a></li>
-									<li><a href="talks.html">TALKS</a></li>
-									<li><a href="services.html">SERVICE</a></li>
-								</ul>
-							</nav>
-						</header>
-					</div>
+	        <ul class="list-unstyled components mb-5">
+            <li  class="active">
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Research Interests</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                    <a href="dp.html">Traditional Data Prep</a>
+                </li>
+                <li>
+                    <a href="dldp.html">Deep Learning for Data Prep</a>
+                </li>
+                <li>
+                    <a href="dpml.html">Data Prep for Machine Learning</a>
+                </li>
+                <li>
+                    <a href="visdp.html">Visualization for Data Prep</a>
+                </li>                
+              </ul>
+            </li>
+            <li>
+                <a href="publications.html">Publications</a>
+            </li>
+	          <li>
+	            <a href="bio.html">Bio</a>
+	          </li>
+	          <li>
+              <a href="awards.html">Awards</a>
+	          </li>
+	          <li>
+              <a href="talks.html">Talks</a>
+	          </li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+	        </ul>
 
-			<!-- Main -->
-				<div id="main-wrapper">
-					<div class="container">
-						<div class="row gtr-200">
-							<div class="col-4 col-12-medium">
-								<div id="sidebar">
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        </div>
 
-									<!-- Sidebar -->
-										<section>
-											
-											<img src="images/nan.jpeg" height="270" alt="" />
-											
-											<p>
-												<br> Senior Scientist
-												<br> Qatar Computing Research Institute, HBKU
-												<br>
-												<a class="tutorial hvr-pop" href="mailto:ntang@hbku.edu.qa/">email: ntang@hbku.edu.qa</a>
-											</p>
+	      </div>
+    	</nav>
 
-											<h3>News</h3>
-											<ul class="style2">
-												<li><b>2021-03-12</b></li> 
-												We got two papers in SIGMOD 2021, "Learned Cardinality Estimation for Similarity Queries", and "Synthesizing Natural Language to Visualization (NL2VIS) Benchmarks from NL2SQL Benchmarks".
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
 
-												<li><b>2021-03-16</b></li> 
-												We got two  paper in VLDB 2021, "Adaptive Data Augmentation for Supervised Learning over Missing Data", and "RPT: Relational Pre-trained Transformer Is Almost All You Need towards Democratizing Data Preparation".
-											</ul>
-										</section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
 
-								</div>
-							</div>
-							<div class="col-8 col-12-medium imp-medium">
-								<div id="content">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
 
-									<!-- Content -->
-										<article>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bio.html">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="awards.html">Awards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="talks.html">Talks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>                
+              </ul>
+            </div>
+          </div>
+        </nav>
 
-											<h3>Research Interests</h3>
+        <h2 class="mb-4">Research Interests</h2>
+        <p>
+        An oft-cited statistic is that data scientists spend at least 80% of their time on data preparation, including discovering datasets from a large data repository such as data lakes, integrating the discovered datasets from multiple sources into a single and unified dataset, enriching a dataset with other datasets, cleaning the dataset by correcting erroneous values or imputing missing values, and transforming the data into a uniform representation, prior to downstream analytical tasks, such as data mining and machine learning. In particular, a recent trend in the ML community is from model-centric to data-centric, which emphasizes the importance of data preparation for improving model performance.
+        </p>
 
-											My main research interest is <b>data preparation</b>, which includes data discovery, data cleaning, and data integration. Data preparation is considered to be the most time-consuming and least enjoyable data science task in real-life. Solving data preparation problems often requires a combination of machine learning, data visualization, human-in-the-loop analytics, and scalable data management. 
+        <p>
+        Despite the increasing importance of data preparation and the rich theoretical and practical contributions in all aspects of data preparation, it remains a lengthy undertaking for data professionals or business users, which also typically requires human- or crowd-in-the-loop. Nevertheless, it is essential as a prerequisite for all data science tasks. Furthermore, solving data preparation in big data faces more challenges due to its high and increasing volume, variety and velocity of data in many applications.
+        </p>
 
-											<h3>Current Directions</h3>
-											
-											<ul>
-												<li>
-													<b>Data preparation algorithms and systems.</b> 
-											  	</li>
-											  	<li>
-											  		<b>Deep learning for data preparation.</b> 
-											  	</li>
-											  	<li>
-											  		<b>Data visualization for data preparation.</b>
-											   </li>
-											  	<li>
-											  		<b>Data preparation for deep learning.</b> 
-											  	</li>
-											</ul>
-																						
-											<h3>Closed Projects</h3>							
+        <p>My main research interest is about data preparation, including the following aspects:</p>
+       <ul> 
+          <li> <a href="dp.html">Traditional data preparation </a></li>
+          <li> <a href="dldp.html"> Deep learning for data preparation </a> </li>
+          <li> <a href="dpml.html">Data preparation for machine learning </a></li>
+          <li> <a href="visdp.html">Visualization for data preparation</a></li>
+       </ul>
+      </div>
+		</div>
 
-											<ul>		  		
-											  <li><b><a href="https://arxiv.org/pdf/1903.03229.pdf">Castor:</a> </b> Deductive optimization of relational data storage. <a href="https://github.com/jfeser/castor">[Github]</a>  </li>							
-											  <li><b><a href="http://da.qcri.org/ntang/pubs/vldb18-deeper.pdf">DeepER:</a> </b> using distributed representations of tuples for entity resolution. <a href="https://github.com/daqcri/DeepER">[Github]</a> </li>
-											  <li><b><a href="http://da.qcri.org/ntang/miscellaneous.html">JARVIS:</a></b> immersive, interactive, and intelligent data analytics using AR/VR devices.</li>
-											  <li><b><a href="http://da.qcri.org/ntang/pubs/synthesizer.pdf"> Synthesizer:</a></b> using program synthesis to generate concise entity resolution rules.</li>
-											  <li><b><a href="http://da.qcri.org/ntang/miscellaneous.html">TCM:</a></b> a novel two-dimensional graph stream summarization.</li>
-											  <li><b><a href="http://da.qcri.org/ntang/pubs/falcon.pdf"> FALCON:</a></b> an interactive, deterministic, and declarative data cleaning system.</li>
-											  <li><b><a href="http://da.qcri.org/ntang/pubs/sigmod13.pdf"> NADEEF:</a></b> a commodity data cleaning system. <a href="https://github.com/daqcri/NADEEF">[Github]</a> </li>
-											  <li><b><a href="http://da.qcri.org/ntang/pubs/katara.pdf"> KATARA:</a></b> a trusted data cleaning system powered by knowledge bases and crowdsourcing.</li>
-											</ul>
-
-											<h3>My Publications</h3>
-											<a href="https://dblp.org/pers/hd/t/Tang_0001:Nan" class="button icon fa-file-alt">DBLP</a>
-											<a href="https://scholar.google.com/citations?user=poXWlycAAAAJ&hl=en" class="button icon solid fa-arrow-circle-right">Google Scholar</a>											
-											<br>				
-											To see the full list of publications, please go to <a href="publications.html">here</a>.
-										</article>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-		<!-- Footer -->
-		<div id="footer-wrapper">
-			<footer id="footer" class="container">
-				<div class="row">
-					<div class="3u">				
-						<!-- Contact -->
-						<section class="widget contact last">							
-							<h3>Contact Me</h3>
-							<ul>
-								<li><a href="https://www.facebook.com/nan.tang" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://www.flickr.com/photos/nantang/collections/" class="icon brands fa-instagram"><span class="label">Flickr</span></a></li>
-								<li><a href="https://twitter.com/ntang928" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							</ul>
-							<p> Qatar Computing Research Institute<br /> 
-								Hamad Bin Khalifa University<br /> 
-								S1124, HBKU Research Complex<br />
-								Doha, Qatar<br/>
-								(974) 44542850</p>
-						</section>				
-					</div>
-					<div class="6u">
-						<h4>Countries visited</h4>
-						<img src="http://chart.apis.google.com/chart?cht=map:fixed=-70,-180,80,180&chs=450x300&chf=bg,s,336699&chco=d0d0d0,cc0000&chd=s:9999999999999999999999999999999999999999999999999999999999&chld=VA|GB|CH|SE|ES|SI|NO|NL|MC|LU|IT|IS|GR|HU|DE|FR|DK|CZ|HR|BE|AT|AU|BH|CN|IR|JP|JO|OM|TR|TH|LK|SG|QA|MX|US|CA|SC|KR|MU|KE|TZ|SA|ID|IN|MV|FI|EE|ZA|AE|GE|NZ|VN|MY|KH|BR|PE|UY|EG" width="450" height="300" ><br/>visited 58 states (25.7%) 
-					</div>				
-					<div class="3u">
-						<h4>Visitors to this page come from:</h4>
-						<div id="clustrmaps-widget"></div><script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?u=V1Tp&d=xwu-i7DKewjLuClEMS1KRUy-coXZEhzgFO-7-gRW6xQ"></script>
-					</div>
-				</div>
-			</footer>
-		</div>		
-
-		<!-- Scripts -->
-
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
