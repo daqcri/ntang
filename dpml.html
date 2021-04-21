@@ -108,14 +108,17 @@
         </nav>
 
         <h2 class="mb-4">Data Prep for Machine Learning</h2>
-        <p>This line of research studies data preparation for data-centric machine learning, especially for co-debugging data and label problems. More specifically, I am working on improving either the data quality, the label quality, or both, in order to train better and robust machine learning models.
+        <p> The majority of work on machine learning is design and train a robust model, by using well-curated benchmarks, which is known as <b>model-centric</b>. In real applications, it is actually not hard to decide which model to use for a particular application, such as CNN and ResNet for image processing and Transformer-based networks for NLP. Instead, the main problem, which costs 80% of data scientists' time, is an iterative process of finding data, cleaning data, labeling data, cleaning labels (possibly from multiple annotators), training a model, and iterating from the beginning if the model performance does not meet the requirement. 
+        </p>
+        <p>
+        The goal of data prep for machine learning is <b>data-centric</b>, which tries to help practitioners better and easier prepare their training data. Typically, we can assume that a downstream application is fixed (for example, a machine learning model), and the task is to clean the data, find or synthesize more training data, clean the labels, and so on, so as to improve the performance of the given downstream application.
         </p>
 
         <p>
         <h5>DAGAN: Adaptive Data Augmentation for Supervised Learning over Missing Data</h5>
          Real-world data is dirty, which causes serious problems in (supervised) ML. The widely used practice in such scenario is to first repair the labeled source (a.k.a. train) data using rule-, statistical- or ML- based methods and then use the “repaired” source to train an ML model. During production, unlabeled target (a.k.a. test) data will also be repaired, and is then fed in the trained ML model for prediction. However, this process often causes a performance degradation when the source and target datasets are dirty with different noise patterns, which is common in practice. 
-
-         <br><br>
+        </p>
+        <p>
          We propose an end-to-end adaptive data augmentation framework, called <a href="pubs/[vldb21]dagan.pdf">DAGAN at PVLDB'21</a> that uses a pair of Generative Adversarial Networks (GANs), for handling missing data in supervised ML. One GAN learns noise patterns from the target data, and the other GAN learns to adapt the source data with the extracted target noise patterns while still preserving supervision signals in the source. We have shown that DAGAN is the most robust missing data imputation solution for supervised ML for different missing patterns, MCAR, MAR, and MNAR.
         </p>
 
